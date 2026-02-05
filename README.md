@@ -1,3 +1,29 @@
+# IT Tools (Customized Version)
+
+本项目基于开源项目 [CorentinTh/it-tools](https://github.com/CorentinTh/it-tools) 进行二次开发与功能增强。
+
+> **说明**：原项目是一个功能强大的在线开发工具箱。我的版本在此基础上针对个人使用习惯和特定场景进行了调整。
+
+
+## 🚀 改进说明 (What's New)
+
+本项目是 **it-tools** 的个人定制版本，主要在原版基础上进行了以下改进：
+
+1. **主题色彩重构**：
+   - 更改了全局主题颜色，打造了更加个性化的视觉体验。
+   - 优化了暗黑/明亮模式下的色彩过渡。
+
+2. **SEO 深度优化**：
+   - 针对搜索引擎进行了元数据（Metadata）重写，大幅提升了网站的搜索排名潜力。
+   - 优化了 TDK (Title, Description, Keywords) 策略，更精准地覆盖 IT 工具相关关键词。
+
+3. **合规性说明**：
+   - 根据 **GNU GPLv3** 协议，本项目保留原作者 @CorentinTh 的所有版权信息。
+   - 本项目源码同样以 GPLv3 协议完全开放。
+
+---
+
+
 ![logo](.github/logo.png)
 
 Useful tools for developer and people working in IT. [Have a look !](https://it-tools.tech).
@@ -98,3 +124,14 @@ This project is continuously deployed using [vercel.com](https://vercel.com).
 ## License
 
 This project is under the [GNU GPLv3](LICENSE).
+
+
+## 开源协议 (License)
+
+本项目遵循 **GNU General Public License v3.0 (GPLv3)**。
+
+1. **继承开源**：由于原项目采用 GPLv3 协议，本项目作为衍生作品，同样以 GPLv3 协议分发。
+2. **版权保留**：保留原作者 [CorentinTh](https://github.com/CorentinTh) 的版权声明。
+3. **权利与义务**：你可以自由地运行、学习、修改和分享本项目，但如果你分发本项目的修改版，必须同样保持开源并提供源代码。
+
+详情请参阅项目中的 [LICENSE](https://github.com/waynew9527/it-tools/blob/main/LICENSE) 文件。
