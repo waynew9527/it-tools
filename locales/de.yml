@@ -1,0 +1,448 @@
+'404':
+  notFound: 404 Nicht gefunden
+  sorry: Entschuldigung, diese Seite scheint nicht zu existieren
+  maybe: >-
+    Vielleicht macht der Cache etwas Seltsames. Mit einem erzwungenen Neuladen
+    versuchen?
+  backHome: Zurück zur Startseite
+home:
+  categories:
+    newestTools: Neueste Tools
+    favoriteTools: Deine Lieblingstools
+    allTools: Alle Tools
+    favoritesDndToolTip: 'Ziehen und Ablegen, um Favoriten neu zu ordnen'
+  subtitle: Praktische Tools für Entwickler
+  toggleMenu: Menü umschalten
+  home: Startseite
+  uiLib: UI-Bibliothek
+  support: Unterstütze die Entwicklung von IT-Tools
+  buyMeACoffee: Kauf mir einen Kaffee
+  follow:
+    title: Magst du IT-Tools?
+    p1: Gib uns einen Stern auf
+    githubRepository: IT-Tools GitHub-Repository
+    p2: oder folge uns auf
+    twitterXAccount: IT-Tools X-Konto
+    thankYou: Vielen Dank!
+  nav:
+    github: GitHub-Repository
+    githubRepository: IT-Tools GitHub-Repository
+    twitterX: X-Konto
+    twitterXAccount: IT-Tools X-Konto
+    about: Über IT-Tools
+    aboutLabel: Über
+    darkMode: Dunkelmodus
+    lightMode: Hellmodus
+    mode: Wechseln zwischen dunklem/hellem Modus
+about:
+  content: >
+    # Über IT-Tools
+
+    Diese wunderbare Website, erstellt mit ❤ von [Corentin
+    Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about), sammelt nützliche Tools für
+    Entwickler und Menschen, die in der IT arbeiten. Wenn du sie nützlich
+    findest, teile sie gerne mit Personen, von denen du denkst, dass sie sie
+    ebenfalls nützlich finden könnten, und vergiss nicht, sie in deiner
+    Lesezeichenleiste zu speichern!
+
+    IT-Tools ist Open Source (unter der GPL-3.0-Lizenz) und kostenlos und wird es
+    immer sein, aber es kostet mich Geld, die Website zu hosten und den
+    Domainnamen zu erneuern. Wenn du meine Arbeit unterstützen möchtest und mich
+    ermutigen möchtest, mehr Tools hinzuzufügen, überlege bitte, mich durch
+    [Sponsoring](https://www.buymeacoffee.com/cthmsst) zu unterstützen.
+
+    ## Technologien
+
+    IT-Tools wurde mit Vue.js (Vue 3) und der Naive UI-Komponentenbibliothek
+    erstellt und wird von Vercel gehostet und kontinuierlich bereitgestellt. In
+    einigen Tools werden Drittanbieter-Open-Source-Bibliotheken verwendet. Du
+    findest die vollständige Liste in der
+    [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json)-Datei
+    des Repositorys.
+
+    ## Einen Fehler gefunden? Ein Tool fehlt?
+
+    Wenn du ein Tool benötigst, das hier noch nicht vorhanden ist, und du
+    denkst, dass es nützlich sein könnte, bist du herzlich eingeladen, einen
+    Feature-Request im
+    [Issues-Bereich](https://github.com/CorentinTh/it-tools/issues/new/choose)
+    im GitHub-Repository einzureichen.
+
+    Und wenn du einen Fehler gefunden hast oder etwas nicht wie erwartet
+    funktioniert, melde bitte einen Fehler im
+    [Issues-Bereich](https://github.com/CorentinTh/it-tools/issues/new/choose)
+    im GitHub-Repository.
+favoriteButton:
+  remove: Aus Favoriten entfernen
+  add: Zu Favoriten hinzufügen
+toolCard:
+  new: Neu
+search:
+  label: Suche
+tools:
+  categories:
+    favorite-tools: Deine Lieblingstools
+    crypto: Krypto
+    converter: Konverter
+    web: Web
+    images and videos: Bilder & Videos
+    development: Entwicklung
+    network: Netzwerk
+    math: Mathematik
+    measurement: Messung
+    text: Text
+    data: Daten
+  password-strength-analyser:
+    title: Passwortstärken-Analysator
+    description: >-
+      Ermittle die Stärke deines Passworts mit diesem Client-seitigen
+      Passwortstärken-Analysator und Tool zur Schätzung der Knackzeit.
+  chronometer:
+    title: Online-Stoppuhr & Chronometer - Rundenzähler mit präziser Zeiterfassung
+    description: >-
+      Überwachen Sie die Dauer und verfolgen Sie die Zeit mit dieser Online-Stoppuhr. Mit Rundenzähler, Pause/Fortsetzen, präziser Millisekunden-Verfolgung. Perfekt für Workouts, Lernsessions, Kochen, Meetings und Produktivitätsverfolgung.
+  token-generator:
+    title: Zufälliger Token-Generator - API-Schlüssel, Passwörter & Sichere Strings
+    description: >-
+      Generiere sichere zufällige Tokens, API-Schlüssel, Passwörter und
+      alphanumerische Strings online. Erstelle kryptografische Tokens mit
+      anpassbarer Länge, Großbuchstaben, Kleinbuchstaben, Zahlen und
+      Sonderzeichen. Perfekt für Authentifizierung, Session-IDs und geheime
+      Schlüssel.
+    uppercase: Großbuchstaben (ABC...)
+    lowercase: Kleinbuchstaben (abc...)
+    numbers: Zahlen (123...)
+    symbols: Symbole (!-;...)
+    length: Länge
+    tokenPlaceholder: Der Token ...
+    copied: Token in die Zwischenablage kopiert
+    button:
+      copy: Kopieren
+      refresh: Aktualisieren
+  percentage-calculator:
+    title: Prozentrechner
+    description: >-
+      Berechne einfach Prozentsätze von einem Wert zu einem anderen Wert oder
+      von einem Prozentsatz zu einem Wert.
+  svg-placeholder-generator:
+    title: SVG-Platzhalter-Generator
+    description: >-
+      Generiere SVG-Bilder, die als Platzhalter in deinen Anwendungen verwendet
+      werden können.
+  json-to-csv:
+    title: JSON zu CSV
+    description: Konvertiere JSON mit automatischer Headererkennung in CSV.
+  camera-recorder:
+    title: Kamera-Rekorder
+    description: Mache ein Foto oder nimm ein Video von deiner Webcam oder Kamera auf.
+  keycode-info:
+    title: Keycode-Info
+    description: >-
+      Finde den JavaScript-Keycode, den Code, den Standort und die Modifikatoren
+      einer beliebigen gedrückten Taste.
+  emoji-picker:
+    title: Emoji-Picker
+    description: >-
+      Einfaches Kopieren und Einfügen von Emojis. Erhalte außerdem den Unicode-
+      und Codepunkt-Wert jedes Emojis.
+  color-converter:
+    title: Farbkonverter
+    description: >-
+      Konvertiere Farben zwischen den verschiedenen Formaten (Hex, RGB, HSL und
+      CSS-Name).
+  bcrypt:
+    title: Bcrypt Passwort-Hash-Generator & Validator - Sichere Passwort-Verschlüsselung
+    description: >-
+      Hashen und überprüfen Sie Passwörter sicher mit dem bcrypt-Algorithmus online. Generieren Sie bcrypt-Hashes mit anpassbaren Salt-Runden, vergleichen Sie Passwort-Hashes und verschlüsseln Sie Anmeldeinformationen für die Datenbankspeicherung. Basierend auf Blowfish-Verschlüsselung, resistent gegen Rainbow-Table- und Brute-Force-Angriffe.
+  crontab-generator:
+    title: Crontab-Generator
+    description: >-
+      Überprüfe und generiere Crontab und erhalte die menschenlesbare
+      Beschreibung des Cron-Zeitplans.
+  http-status-codes:
+    title: HTTP-Statuscodes
+    description: Liste aller HTTP-Statuscodes, ihrer Namen und ihrer Bedeutung.
+  sql-prettify:
+    title: SQL verschönern und formatieren
+    description: >-
+      Formatiere und verschönere deine SQL-Abfragen online (unterstützt
+      verschiedene SQL-Dialekte).
+  benchmark-builder:
+    title: Benchmark-Builder
+    description: >-
+      Vergleiche ganz einfach die Ausführungszeit von Aufgaben mit diesem sehr
+      einfachen Online-Benchmark-Builder.
+  git-memo:
+    title: Git-Spickzettel
+    description: >-
+      Git ist eine dezentrale Versionsverwaltungssoftware. Mit diesem
+      Spickzettel hast du schnellen Zugriff auf die gängigsten Git-Befehle.
+  slugify-string:
+    title: Slugify String
+    description: Mache einen String URL-, Dateinamen- und ID-sicher.
+  encryption:
+    title: Text-Verschlüsselung & Entschlüsselung - AES, TripleDES, Rabbit, RC4
+    description: >-
+      Verschlüsseln und entschlüsseln Sie Text sicher mit Industriestandard-Algorithmen wie AES, TripleDES, Rabbit und RC4. Client-seitige Verschlüsselung für Passwörter, API-Schlüssel, sensible Daten und sichere Nachrichten. Privates, offline Text-Verschlüsselungstool.
+  random-port-generator:
+    title: Zufälliger Port-Generator
+    description: >-
+      Generiere zufällige Portnummern außerhalb des Bereichs der "bekannten"
+      Ports (0-1023).
+  yaml-prettify:
+    title: YAML verschönern und formatieren
+    description: Verschönere deinen YAML-String in ein menschenlesbares Format.
+  eta-calculator:
+    title: ETA-Rechner
+    description: >-
+      Ein ETA (Estimated Time of Arrival)-Rechner, um die ungefähre Endzeit
+      einer Aufgabe zu erfahren, z. B. den Zeitpunkt des Endes eines Downloads.
+  roman-numeral-converter:
+    title: Römische Zahlen Konverter
+    description: >-
+      Konvertiere römische Zahlen in Dezimalzahlen und Dezimalzahlen in römische
+      Zahlen.
+  hmac-generator:
+    title: HMAC-Generator Online - Hashbasierter Nachrichtenauthentifizierungscode-Tool
+    description: >-
+      Generieren Sie HMAC (Hashbasierter Nachrichtenauthentifizierungscode) für Datenintegrität und Authentifizierung. Unterstützt MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 und RIPEMD160-Algorithmen. Perfekt für API-Signaturen, Webhook-Verifizierung, JWT-Token und sichere Nachrichtenauthentifizierung. Erstellen Sie kryptografische Signaturen mit geheimen Schlüsseln für REST-APIs und Datenvalidierung.
+  bip39-generator:
+    title: BIP39 Mnemonic & Seed-Phrase-Generator - Krypto-Wallet-Wiederherstellungstool
+    description: >-
+      Generieren Sie BIP39-Mnemonic-Seed-Phrasen für Kryptowährungs-Wallets. Erstellen Sie sichere 12-Wort- oder 24-Wort-Wiederherstellungsphrasen für Bitcoin, Ethereum und andere Krypto-Wallets. Unterstützung für Hardware-Wallets (Ledger, Trezor), HD-Wallets (BIP32/BIP44) und Wallet-Backup/Wiederherstellung. Generierung aus Entropie oder vorhandener Mnemonic mit kryptografischer Sicherheit.
+  base64-file-converter:
+    title: Base64-Dateikonverter
+    description: Konvertiere Strings, Dateien oder Bilder in ihre Base64-Repräsentation.
+  list-converter:
+    title: Listenkonverter
+    description: >-
+      Dieses Tool kann spaltenbasierte Daten verarbeiten und verschiedene
+      Änderungen (transponieren, Präfix und Suffix hinzufügen, Liste umkehren,
+      Liste sortieren, Werte in Kleinbuchstaben umwandeln, Werte abschneiden)
+      auf jede Zeile anwenden.
+  base64-string-converter:
+    title: Base64-String-Encoder/Decoder
+    description: Codiere und decodiere Strings einfach in ihre Base64-Repräsentation.
+  toml-to-yaml:
+    title: TOML zu YAML
+    description: Parse und konvertiere TOML zu YAML.
+  math-evaluator:
+    title: Mathematischer Auswerter
+    description: >-
+      Ein Taschenrechner zum Auswerten mathematischer Ausdrücke. Du kannst
+      Funktionen wie sqrt, cos, sin, abs usw. verwenden.
+  json-to-yaml-converter:
+    title: JSON zu YAML
+    description: Konvertiere JSON einfach in YAML mit diesem Live-Online-Konverter.
+  url-parser:
+    title: URL-Parser Online - URL-Komponenten, Query-Strings & Parameter Kostenlos Decodieren
+    description: URLs online parsen und analysieren. Webadressen in Protokoll, Hostname, Port, Pfad, Abfrage-Parameter, Hash, Benutzername und Passwort zerlegen. Kostenloses URL-Parser-Tool für Entwickler zum Decodieren von Query-Strings, Extrahieren von URL-Komponenten und Validieren der URL-Struktur. Perfekt zum Debuggen von Webanwendungen, API-Entwicklung und Verstehen der URL-Anatomie.
+  iban-validator-and-parser:
+    title: IBAN-Validator und -Parser
+    description: >-
+      Validiere und parse IBAN-Nummern. Überprüfe, ob die IBAN gültig ist, und
+      erhalte das Land, BBAN, ob es sich um eine QR-IBAN handelt und das
+      IBAN-freundliche Format.
+  user-agent-parser:
+    title: User-Agent-Parser
+    description: >-
+      Erkenne und parse Browser, Engine, Betriebssystem, CPU und
+      Gerätetyp/-modell aus einer User-Agent-Zeichenfolge.
+  numeronym-generator:
+    title: Numeronym-Generator
+    description: >-
+      Ein Numeronym ist ein Wort, bei dem eine Zahl verwendet wird, um eine
+      Abkürzung zu bilden. Zum Beispiel ist "i18n" ein Numeronym für
+      "internationalization", wobei 18 für die Anzahl der Buchstaben zwischen
+      dem ersten "i" und dem letzten "n" im Wort steht.
+  case-converter:
+    title: Fall-Konverter
+    description: >-
+      Ändere den Fall eines Strings und wähle zwischen verschiedenen Formaten
+      aus.
+  html-entities:
+    title: HTML-Entitäten Online-Encoder & Decoder - HTML-Zeichen Kostenlos Escapen/Unescapen
+    description: HTML-Entitäten online encodieren und decodieren. Sonderzeichen (<, >, &, ", ') in HTML-Entitäten escapen für XSS-Prävention und Web-Sicherheit. HTML-Entitäten in Text umwandeln und umgekehrt. Kostenloser HTML-Entitäten-Konverter zum Encodieren von kaufmännischen Und-Zeichen, Anführungszeichen, Klammern und Unicode-Zeichen. Perfekt zum Bereinigen von Benutzereingaben, Verhindern von HTML-Injection und sichere Webentwicklung.
+  json-prettify:
+    title: JSON verschönern und formatieren
+    description: Verschönere deinen JSON-String in ein menschenlesbares Format.
+  docker-run-to-docker-compose-converter:
+    title: Docker run zu Docker compose Konverter
+    description: Wandle docker run-Befehle in docker-compose-Dateien um!
+  mac-address-lookup:
+    title: MAC-Adressensuche
+    description: Finde den Anbieter und Hersteller eines Geräts anhand seiner MAC-Adresse.
+  mime-types:
+    title: MIME-Typen
+    description: Konvertiere MIME-Typen in Erweiterungen und umgekehrt.
+  toml-to-json:
+    title: TOML zu JSON
+    description: Parse und konvertiere TOML zu JSON.
+  lorem-ipsum-generator:
+    title: Lorem Ipsum Generator
+    description: >-
+      Lorem Ipsum ist ein Platzhaltertext, der häufig verwendet wird, um die
+      visuelle Form eines Dokuments oder einer Schriftart ohne Verwendung von
+      bedeutendem Inhalt zu demonstrieren.
+  qrcode-generator:
+    title: QR-Code-Generator
+    description: >-
+      Generiere und downloade QR-Codes für eine URL oder einfach einen Text und
+      passe die Hintergrund- und Vordergrundfarben an.
+  wifi-qrcode-generator:
+    title: WLAN-QR-Code-Generator
+    description: >-
+      Generiere und lade QR-Codes für schnelle Verbindungen zu WLAN-Netzwerken
+      herunter.
+  xml-formatter:
+    title: XML-Formatter
+    description: Verschönere deinen XML-String in ein menschenlesbares Format.
+  temperature-converter:
+    title: Temperaturkonverter
+    description: >-
+      Temperaturgradumrechnungen für Kelvin, Celsius, Fahrenheit, Rankine,
+      Delisle, Newton, Réaumur und Rømer.
+  chmod-calculator:
+    title: Chmod-Rechner
+    description: >-
+      Berechne deine Chmod-Berechtigungen und -Befehle mit diesem
+      Online-Chmod-Rechner.
+  rsa-key-pair-generator:
+    title: RSA-Schlüsselpaar-Generator
+    description: Generiere neue zufällige RSA-Private- und Public-Key-PEM-Zertifikate.
+  html-wysiwyg-editor:
+    title: HTML-WYSIWYG-Editor
+    description: >-
+      Online-HTML-Editor mit funktionsreichem WYSIWYG-Editor, erhalte sofort den
+      Quellcode des Inhalts.
+  yaml-to-toml:
+    title: YAML zu TOML
+    description: Parse und konvertiere YAML zu TOML.
+  mac-address-generator:
+    title: MAC-Adressen-Generator
+    description: >-
+      Gebe die Menge und das Präfix ein. MAC-Adressen werden in deiner gewählten
+      Schreibweise (Groß- oder Kleinbuchstaben) generiert.
+  json-diff:
+    title: JSON-Unterschied
+    description: Vergleiche zwei JSON-Objekte und erhalte die Unterschiede zwischen ihnen.
+  jwt-parser:
+    title: JWT-Parser
+    description: >-
+      Parse und decodiere deinen JSON-Web-Token (JWT) und zeige dessen Inhalt
+      an.
+  date-converter:
+    title: Datum-Uhrzeit-Konverter
+    description: Konvertiere Datum und Uhrzeit in verschiedene Formate.
+  phone-parser-and-formatter:
+    title: Telefonnummer-Parser und -Formatter
+    description: >-
+      Parse, validiere und formatiere Telefonnummern. Erhalte Informationen zur
+      Telefonnummer, wie z. B. die Landesvorwahl, den Typ usw.
+  ipv4-subnet-calculator:
+    title: IPv4-Subnetzrechner
+    description: >-
+      Parse deine IPv4-CIDR-Blöcke und erhalte alle Informationen, die du über
+      dein Subnetz benötigst.
+  og-meta-generator:
+    title: Open Graph Meta-Generator
+    description: Generiere Open Graph- und Social-HTML-Metatags für deine Website.
+  ipv6-ula-generator:
+    title: IPv6-ULA-Generator
+    description: >-
+      Generiere deine eigenen lokalen, nicht routbaren IP-Adressen in deinem
+      Netzwerk gemäß RFC4193.
+  hash-text:
+    title: Hash-Text-Generator - MD5, SHA256, SHA512 & Kryptografische Hashes
+    description: >-
+      Generiere kryptografische Hashes für Textstrings mit MD5, SHA1, SHA256,
+      SHA224, SHA512, SHA384, SHA3 und RIPEMD160-Algorithmen. Überprüfe die
+      Datenintegrität, erstelle Prüfsummen und generiere Message Digests für
+      Sicherheit und Dateiüberprüfung. Schnelles, sicheres,
+      clientseitiges Hashing-Tool.
+  json-to-toml:
+    title: JSON zu TOML
+    description: Parse und konvertiere JSON zu TOML.
+  device-information:
+    title: Geräteinformations-Checker - Browser & Bildschirm-Info, User-Agent-Detektor Online
+    description: Umfassende Geräteinformationen erkennen und anzeigen, einschließlich Bildschirmauflösung, Pixelverhältnis, Viewport-Größe, Browsername, Browserversion, Betriebssystem, User-Agent-String und Plattformdetails. Kostenloser Online-Gerätedetektor für Responsive-Design-Tests, Browser-Fingerprinting und Webentwicklung. Gerätespezifikationen, Bildschirmabmessungen und Systeminformationen sofort überprüfen.
+  pdf-signature-checker:
+    title: PDF-Signaturprüfer
+    description: >-
+      Überprüfe die Signaturen einer PDF-Datei. Eine signierte PDF-Datei enthält
+      eine oder mehrere Signaturen, die verwendet werden können, um
+      festzustellen, ob der Inhalt der Datei seit dem Zeitpunkt der Signierung
+      geändert wurde.
+  json-minify:
+    title: JSON minifizieren
+    description: >-
+      Minifiziere und komprimiere dein JSON, indem unnötige Leerzeichen entfernt
+      werden.
+  ulid-generator:
+    title: ULID-Generator Online - Sortierbare Eindeutige ID & Zeitstempelbasierter Identifikator
+    description: >-
+      Generieren Sie Universally Unique Lexicographically Sortable Identifiers (ULIDs) online. Besser als UUIDs mit integrierter Zeitstempel-Sortierung, 128-Bit-Eindeutige IDs in Crockford Base32 kodiert. Perfekt für Datenbanken, verteilte Systeme, Event Sourcing und zeitgeordnete Daten. Monotone, sortierbare und URL-sichere Identifikatoren.
+  string-obfuscator:
+    title: String-Verschleierer
+    description: >-
+      Verschleiere einen String (wie ein Secret, eine IBAN oder ein Token), um
+      ihn weitergeben zu können und identifizierbar zu machen, ohne seinen
+      Inhalt preiszugeben.
+  base-converter:
+    title: Ganzzahl-Basiskonverter
+    description: >-
+      Konvertiere Zahlen zwischen verschiedenen Basen (Dezimal, Hexadezimal,
+      Binär, Oktal, Base64, ...).
+  yaml-to-json-converter:
+    title: YAML zu JSON
+    description: Konvertiere YAML einfach in JSON mit diesem Live-Online-Konverter.
+  uuid-generator:
+    title: UUID-Generator Online - v1, v4, v5 & GUID-Generator-Tool
+    description: >-
+      Generieren Sie universell eindeutige Identifikatoren (UUIDs) online. Erstellen Sie zufällige UUID v4, zeitbasierte UUID v1, namensbasierte UUID v3/v5 und Null-UUIDs. Perfekt für Datenbankprimärschlüssel, API-Anfrage-IDs, Sitzungsidentifikatoren und verteilte Systeme. RFC 4122-konformer 128-Bit-Eindeutige-ID-Generator.
+  ipv4-address-converter:
+    title: IPv4-Adresskonverter
+    description: >-
+      Konvertiere eine IP-Adresse in Dezimal, Binär, Hexadezimal oder sogar in
+      IPv6.
+  text-statistics:
+    title: Textstatistiken
+    description: >-
+      Informationen zu einem Text erhalten, wie die Anzahl der Zeichen, die
+      Anzahl der Wörter, die Größe usw.
+  text-to-nato-alphabet:
+    title: Text zu NATO-Alphabet
+    description: >-
+      Wandle Text in das NATO-Phonetik-Alphabet für die mündliche Übermittlung
+      um.
+  basic-auth-generator:
+    title: Basic-Auth-Generator Online - HTTP-Authorization-Header-Encoder Kostenlos
+    description: HTTP-Basic-Authentication-Header aus Benutzername und Passwort generieren. Anmeldeinformationen in Base64-Format für Authorization-Header encodieren. Kostenloser Online-Basic-Auth-Generator für REST-API-Tests, cURL-Befehle, Postman-Anfragen und HTTP-Authentifizierung. Sichere Basic-Auth-Tokens für API-Entwicklung und Webservice-Integration erstellen.
+  text-to-unicode:
+    title: Text zu Unicode
+    description: Parse und konvertiere Text in Unicode und umgekehrt.
+  ipv4-range-expander:
+    title: IPv4-Bereichserweiterer
+    description: >-
+      Bei Angabe einer Start- und End-IPv4-Adresse berechnet dieses Tool ein
+      gültiges IPv4-Netzwerk mit seiner CIDR-Notation.
+  text-diff:
+    title: Textunterschied
+    description: Vergleiche zwei Texte und sieh die Unterschiede zwischen ihnen.
+  otp-generator:
+    title: OTP-Code-Generator
+    description: >-
+      Generiere und validiere zeitbasierte OTPs (Einmalpasswörter) für
+      Multi-Faktor-Authentifizierung.
+  url-encoder:
+    title: Kodieren/Decodieren von URL-formatierten Zeichenfolgen
+    description: >-
+      Kodiere zum URL-kodierten Format (auch als "prozentkodiert" bekannt) oder
+      decodiere es.
+  text-to-binary:
+    title: Text zu ASCII-Binär
+    description: Konvertiere Text in seine ASCII-Binärrepräsentation und umgekehrt.
+
+  ascii-text-drawer:
+    title: ASCII-Art-Generator & Textzeichner - Figlet-Schrift-Banner-Maker Online
+    description: Erstellen Sie ASCII-Art und Textbanner online. Konvertieren Sie Text in ASCII-Art mit mehreren Figlet-Schriftstilen. Kostenloser ASCII-Textgenerator für Terminal-Banner, Code-Kommentar-Kunst, GitHub-README-Dekoration und Discord/Reddit-Nachrichten. Unterstützt 3D-Schriften, Blockschrift, Schrägschrift, Schattenstile und Kalligraphie. Online-ASCII-Art-Maker mit Kopieren und Einfügen. Perfekt für Entwickler, Programmierer und kreatives Textdesign.

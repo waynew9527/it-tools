@@ -1,0 +1,418 @@
+home:
+  categories:
+    newestTools: Newest tools
+    favoriteTools: 'Your favorite tools'
+    allTools: 'All the tools'
+    favoritesDndToolTip: 'Drag and drop to reorder favorites'
+  subtitle: 'Handy tools for developers'
+  toggleMenu: 'Toggle menu'
+  home: Home
+  uiLib: 'UI Lib'
+  support: 'Support IT-Tools development'
+  buyMeACoffee: 'Buy me a coffee'
+  follow:
+    title: 'You like it-tools?'
+    p1: 'Give us a star on'
+    githubRepository: 'IT-Tools GitHub repository'
+    p2: 'or follow us on'
+    twitterXAccount: 'IT-Tools X account'
+    thankYou: 'Thank you!'
+  nav:
+    github: 'GitHub repository'
+    githubRepository: 'IT-Tools GitHub repository'
+    twitterX: 'X account'
+    twitterXAccount: 'IT Tools X account'
+    about: 'About  IT-Tools'
+    aboutLabel: 'About'
+    darkMode: 'Dark mode'
+    lightMode: 'Light mode'
+    mode: 'Toggle dark/light mode'
+about:
+  content: >
+    # About IT-Tools
+
+    ## Secondary Development Version
+
+    This is a secondary development version based on the original IT-Tools project. You can find this customized version at: [https://github.com/waynew9527/it-tools](https://github.com/waynew9527/it-tools)
+
+    ## About the Original Project
+
+    This wonderful website, made with ❤ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
+
+    IT Tools is open-source (under the GPL-3.0 license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
+
+    ## Technologies
+
+    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
+
+    ## Found a bug? A tool is missing?
+
+    For this secondary development version, please submit issues to: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+    For the original project, if you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+
+    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+
+404:
+  notFound: '404 Not Found'
+  sorry: 'Sorry, this page does not seem to exist'
+  maybe: 'Maybe the cache is doing tricky things, try force-refreshing?'
+  backHome: 'Back home'
+favoriteButton:
+  remove: 'Remove from favorites'
+  add: 'Add to favorites'
+toolCard:
+  new: New
+search:
+  label: Search
+tools:
+  categories:
+    favorite-tools: 'Your favorite tools'
+    crypto: Crypto
+    converter: Converter
+    web: Web
+    images and videos: 'Images & Videos'
+    development: Development
+    network: Network
+    math: Math
+    measurement: Measurement
+    text: Text
+    data: Data
+
+  password-strength-analyser:
+    title: Password Strength Analyzer & Checker - Brute Force Crack Time Calculator
+    description: Analyze password strength and estimate crack time with brute force attack simulations. Check password security against MD5, SHA1, SHA256, SHA512, bcrypt, scrypt, and Argon2 hash algorithms. Calculate password entropy, complexity score, and time to crack. Free online password strength meter with security recommendations.
+
+  chronometer:
+    title: Online Stopwatch & Chronometer - Lap Timer with Precise Time Tracking
+    description: Monitor duration and track time with this online stopwatch and chronometer tool. Features lap timing, pause/resume, precise millisecond tracking. Perfect for workouts, study sessions, cooking, meetings, and productivity tracking.
+
+  token-generator:
+    title: Random Token Generator - API Keys, Passwords & Secure Strings
+    description: Generate secure random tokens, API keys, passwords, and alphanumeric strings online. Create custom-length cryptographic tokens with uppercase letters, lowercase letters, numbers, and special symbols. Perfect for authentication, session IDs, and secret keys.
+
+    uppercase: Uppercase (ABC...)
+    lowercase: Lowercase (abc...)
+    numbers: Numbers (123...)
+    symbols: Symbols (!-;...)
+    length: Length
+    tokenPlaceholder: 'The token...'
+    copied: Token copied to the clipboard
+    button:
+      copy: Copy
+      refresh: Refresh
+  percentage-calculator:
+    title: Percentage calculator
+    description: Easily calculate percentages from a value to another value, or from a percentage to a value.
+
+  svg-placeholder-generator:
+    title: SVG placeholder generator
+    description: Generate svg images to use as a placeholder in your applications.
+
+  json-to-csv:
+    title: JSON to CSV
+    description: Convert JSON to CSV with automatic header detection.
+
+  camera-recorder:
+    title: Camera recorder
+    description: Take a picture or record a video from your webcam or camera.
+
+  keycode-info:
+    title: Keycode info
+    description: Find the javascript keycode, code, location and modifiers of any pressed key.
+
+  emoji-picker:
+    title: Emoji picker
+    description: Copy and paste emojis easily and get the unicode and code points value of each emoji.
+
+  color-converter:
+    title: Color Converter Online - HEX, RGB, HSL & CSS Color Code Tool
+    description: Convert colors between formats including HEX, RGB, RGBA, HSL, HSLA, HSV, CMYK, and CSS color names. Free online color converter for web design, frontend development, and UI design. Convert #ffffff to RGB, color names to HEX codes, and more. Perfect tool for designers and developers.
+
+  bcrypt:
+    title: Bcrypt Password Hash Generator & Validator - Secure Password Encryption
+    description: Hash and verify passwords securely using bcrypt algorithm online. Generate bcrypt hashes with customizable salt rounds, compare password hashes, and encrypt credentials for database storage. Based on Blowfish cipher, resistant to rainbow table and brute force attacks.
+
+  crontab-generator:
+    title: Crontab generator
+    description: Validate and generate crontab and get the human-readable description of the cron schedule.
+
+  http-status-codes:
+    title: HTTP status codes
+    description: The list of all HTTP status codes, their name, and their meaning.
+
+  sql-prettify:
+    title: SQL prettify and format
+    description: Format and prettify your SQL queries online (it supports various SQL dialects).
+
+  benchmark-builder:
+    title: Benchmark builder
+    description: Easily compare execution time of tasks with this very simple online benchmark builder.
+
+  git-memo:
+    title: Git cheatsheet
+    description: Git is a decentralized version management software. With this cheatsheet, you will have quick access to the most common git commands.
+
+  slugify-string:
+    title: Slugify string
+    description: Make a string url, filename and id safe.
+
+  encryption:
+    title: Text Encryption & Decryption Tool - AES, TripleDES, Rabbit, RC4
+    description: Encrypt and decrypt text securely using industry-standard algorithms including AES, TripleDES, Rabbit, and RC4. Client-side encryption for passwords, API keys, sensitive data, and secure messages. Private, offline text cipher tool.
+
+  random-port-generator:
+    title: Random port generator
+    description: Generate random port numbers outside of the range of "known" ports (0-1023).
+
+  yaml-prettify:
+    title: YAML prettify and format
+    description: Prettify your YAML string into a friendly, human-readable format.
+
+  eta-calculator:
+    title: ETA calculator
+    description: An ETA (Estimated Time of Arrival) calculator to determine the approximate end time of a task, for example, the end time and duration of a file download.
+
+  roman-numeral-converter:
+    title: Roman Numeral Converter Online - Roman to Arabic & Number Converter
+    description: Convert Roman numerals to Arabic numbers and vice versa online. Convert I, V, X, L, C, D, M symbols to integers and decimal numbers to Roman format. Free online Roman numeral calculator with validation and educational examples for learning ancient Roman counting system.
+
+  hmac-generator:
+    title: HMAC Generator Online - Hash-Based Message Authentication Code Tool
+    description: Generate HMAC (Hash-based Message Authentication Code) for data integrity and authentication. Supports MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3, and RIPEMD160 algorithms. Perfect for API signatures, webhook verification, JWT tokens, and secure message authentication. Create cryptographic signatures with secret keys for REST APIs and data validation.
+
+  bip39-generator:
+    title: BIP39 Mnemonic & Seed Phrase Generator - Crypto Wallet Recovery Tool
+    description: Generate BIP39 mnemonic seed phrases for cryptocurrency wallets. Create secure 12-word or 24-word recovery phrases for Bitcoin, Ethereum, and other crypto wallets. Support for hardware wallets (Ledger, Trezor), HD wallets (BIP32/BIP44), and wallet backup/restore. Generate from entropy or existing mnemonic with cryptographic security.
+
+  base64-file-converter:
+    title: Base64 File Converter & Encoder - Image to Base64 Data URI Generator
+    description: Convert files, images, and documents to Base64 encoding online. Generate Data URI for HTML/CSS embedding. Convert PNG, JPG, SVG, PDF to base64 strings for frontend development. Client-side encoding with no file upload. Perfect for inline images, CSS backgrounds, and secure file encoding.
+
+  list-converter:
+    title: List Converter Online - Sort, Reverse, Prefix & Transform Text Lists Free
+    description: Transform and manipulate text lists online. Sort alphabetically or numerically, reverse order, add prefix/suffix, change case, remove duplicates, and more. Free bulk text editor for processing multiple lines. Perfect for data cleanup, CSV formatting, and batch text operations.
+
+  base64-string-converter:
+    title: Base64 String Encoder & Decoder Online - Text to Base64 Converter
+    description: Encode and decode Base64 strings online. Convert text to Base64 and Base64 to text with JavaScript atob/btoa functions. RFC 4648 compliant encoding for web development, API integration, and data transmission. Free online Base64 encoding tool with UTF-8 support.
+
+  toml-to-yaml:
+    title: TOML to YAML Converter Online - Convert TOML Config to YAML Format Free
+    description: Convert TOML to YAML configuration format online. Transform TOML files (Cargo.toml, pyproject.toml) to YAML instantly. Free TOML to YAML converter with validation. Perfect for config file migration, Rust and Python projects, and configuration management.
+
+  math-evaluator:
+    title: Math evaluator
+    description: A calculator for evaluating mathematical expressions. You can use functions like sqrt, cos, sin, abs, etc.
+
+  json-to-yaml-converter:
+    title: JSON to YAML Converter Online - Convert JSON Files to YAML Free
+    description: Convert JSON to YAML format instantly. Transform JSON data and configuration files to YAML online. Free JSON to YAML converter with validation. Perfect for configuration management, API development, and data format conversion. Clean YAML output with proper indentation.
+
+  url-parser:
+    title: URL Parser Online - Decode URL Components, Query Strings & Parameters Free
+    description: Parse and analyze URLs online. Break down web addresses into protocol, hostname, port, path, query parameters, hash, username, and password. Free URL parser tool for developers to decode query strings, extract URL components, and validate URL structure. Perfect for debugging web applications, API development, and understanding URL anatomy.
+
+  iban-validator-and-parser:
+    title: IBAN validator and parser
+    description: Validate and parse IBAN numbers. Check if an IBAN is valid and get the country, BBAN, if it is a QR-IBAN and the IBAN friendly format.
+
+  user-agent-parser:
+    title: User-agent parser
+    description: Detect and parse Browser, Engine, OS, CPU, and Device type/model from an user-agent string.
+
+  numeronym-generator:
+    title: Numeronym generator
+    description: A numeronym is a word where a number is used to form an abbreviation. For example, "i18n" is a numeronym of "internationalization" where 18 stands for the number of letters between the first i and the last n in the word.
+
+  case-converter:
+    title: Case Converter Online - camelCase, snake_case, PascalCase & More
+    description: Convert text case between multiple formats including camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, and more. Free online case converter for programmers and developers. Perfect for variable naming, code formatting, and following naming conventions in JavaScript, Python, and other languages.
+
+  html-entities:
+    title: HTML Entities Encoder & Decoder Online - Escape/Unescape HTML Characters Free
+    description: Encode and decode HTML entities online. Escape special characters (<, >, &, ", ') to HTML entities for XSS prevention and web security. Convert HTML entities to text and vice versa. Free HTML entity converter for encoding ampersands, quotes, brackets, and unicode characters. Perfect for sanitizing user input, preventing HTML injection, and secure web development.
+
+  json-prettify:
+    title: JSON prettify and format
+    description: Prettify your JSON string into a friendly, human-readable format.
+
+  docker-run-to-docker-compose-converter:
+    title: Docker run to Docker compose converter
+    description: Transforms "docker run" commands into docker-compose files!
+
+  mac-address-lookup:
+    title: MAC address lookup
+    description: Find the vendor and manufacturer of a device by its MAC address.
+
+  mime-types:
+    title: MIME types
+    description: Convert MIME types to file extensions and vice-versa.
+
+  toml-to-json:
+    title: TOML to JSON Converter Online - Parse TOML Config Files to JSON Free
+    description: Convert TOML to JSON format online. Parse TOML configuration files (Cargo.toml, pyproject.toml) to JSON instantly. Free TOML to JSON converter with validation. Perfect for Rust, Python, and Go projects. Transform config files for API integration and data processing.
+
+  lorem-ipsum-generator:
+    title: Lorem ipsum generator
+    description: Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content
+
+  qrcode-generator:
+    title: QR Code generator
+    description: Generate and download a QR code for a URL (or just plain text), and customize the background and foreground colors.
+
+  wifi-qrcode-generator:
+    title: WiFi QR Code generator
+    description: Generate and download QR codes for quick connections to WiFi networks.
+
+  xml-formatter:
+    title: XML formatter
+    description: Prettify your XML string into a friendly, human-readable format.
+
+  temperature-converter:
+    title: Temperature converter
+    description: Degrees temperature conversions for Kelvin, Celsius, Fahrenheit, Rankine, Delisle, Newton, Réaumur, and Rømer.
+
+  chmod-calculator:
+    title: Chmod calculator
+    description: Compute your chmod permissions and commands with this online chmod calculator.
+
+  rsa-key-pair-generator:
+    title: RSA Key Pair Generator Online - Public & Private Key Creator
+    description: Generate RSA public and private key pairs online securely. Create SSH keys, PEM format keys, and certificates for SSL/TLS, code signing, and authentication. Support for 1024, 2048, 3072, and 4096-bit RSA keys in PKCS1, PKCS8, and OpenSSH formats. Secure asymmetric encryption key generation.
+
+  html-wysiwyg-editor:
+    title: HTML WYSIWYG editor
+    description: Online, feature-rich WYSIWYG HTML editor which generates the source code of the content immediately.
+
+  yaml-to-toml:
+    title: YAML to TOML Converter Online - Convert Config Files to TOML Format
+    description: Convert YAML to TOML configuration format online. Transform YAML files to TOML for Rust (Cargo.toml), Python (pyproject.toml), and Go projects. Free YAML to TOML converter with validation. Perfect for config file migration and project setup.
+
+  mac-address-generator:
+    title: MAC address generator
+    description: Enter the quantity and prefix. MAC addresses will be generated in your chosen case (uppercase or lowercase)
+
+  json-diff:
+    title: JSON diff
+    description: Compare two JSON objects and get the differences between them.
+
+  jwt-parser:
+    title: JWT parser
+    description: Parse and decode your JSON Web Token (jwt) and display its content.
+
+  date-converter:
+    title: Date Time Converter Online - Unix Timestamp & ISO 8601 Format Tool
+    description: Convert dates and times between formats including Unix timestamp, ISO 8601, UTC, RFC 3339, epoch time, and custom formats. Timezone converter for UTC to local time conversions. Parse and format dates with year, month, day, hour, minute, second precision. Perfect for developers working with datetime strings and timestamp conversion.
+
+  phone-parser-and-formatter:
+    title: Phone parser and formatter
+    description: Parse, validate and format phone numbers. Get information about the phone number, like the country code, type, etc.
+
+  ipv4-subnet-calculator:
+    title: IPv4 subnet calculator
+    description: Parse your IPv4 CIDR blocks and get all the info you need about your subnet.
+
+  og-meta-generator:
+    title: Open graph meta generator
+    description: Generate open-graph and socials HTML meta tags for your website.
+
+  ipv6-ula-generator:
+    title: IPv6 ULA generator
+    description: Generate your own local, non-routable IP addresses for your network according to RFC4193.
+
+  hash-text:
+    title: Hash Text Generator - MD5, SHA256, SHA512 & Cryptographic Hash
+    description: Generate cryptographic hashes for text strings using MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3, and RIPEMD160 algorithms. Verify data integrity, create checksums, and generate message digests for security and file verification. Fast, secure, client-side hashing tool.
+
+  json-to-toml:
+    title: JSON to TOML Converter Online - Convert JSON to TOML Config Format Free
+    description: Convert JSON to TOML configuration format online. Transform JSON data to TOML for Rust (Cargo.toml), Python (pyproject.toml), and Go projects. Free JSON to TOML converter with validation. Perfect for config file migration, project setup, and configuration management.
+
+  device-information:
+    title: Device Information Checker - Browser & Screen Info, User Agent Detector Online
+    description: Detect and display comprehensive device information including screen resolution, pixel ratio, viewport size, browser name, browser version, operating system, user agent string, and platform details. Free online device detector for responsive design testing, browser fingerprinting, and web development. Check device specs, screen dimensions, and system information instantly.
+
+  pdf-signature-checker:
+    title: PDF Signature Checker & Validator - Digital Signature Verification Tool
+    description: Verify and validate PDF digital signatures online. Check PDF signature authenticity, certificate validity, and document integrity. Extract signer information, certificate chain, timestamp, and signature status. Supports PKCS7, CMS signatures, X.509 certificates, and Adobe signatures. Free PDF signature verification for legal documents and contracts.
+
+  json-minify:
+    title: JSON minify
+    description: Minify and compress your JSON by removing unnecessary whitespace.
+
+  ulid-generator:
+    title: ULID Generator Online - Sortable Unique ID & Timestamp-Based Identifier
+    description: Generate Universally Unique Lexicographically Sortable Identifiers (ULIDs) online. Better than UUIDs with built-in timestamp sorting, 128-bit unique IDs encoded in Crockford Base32. Perfect for databases, distributed systems, event sourcing, and time-ordered data. Monotonic, sortable, and URL-safe identifiers.
+
+  string-obfuscator:
+    title: String obfuscator
+    description: Obfuscate a string (like a secret, an IBAN, or a token) to make it shareable and identifiable without revealing its content.
+
+  base-converter:
+    title: Integer Base Converter Online - Binary, Hex, Decimal & Octal Calculator
+    description: Convert numbers between different bases including binary (base 2), octal (base 8), decimal (base 10), and hexadecimal (base 16). Programmer calculator for number system conversions with support for bases 2-36. Perfect for computer science, programming, and bitwise operations.
+
+  yaml-to-json-converter:
+    title: YAML to JSON Converter Online - Parse & Convert YAML Files Free
+    description: Convert YAML to JSON format instantly. Parse YAML files and configuration to JSON online. Free YAML to JSON converter with syntax validation. Perfect for API development, config file migration, and data serialization. Supports YML files and multi-line YAML syntax.
+
+  uuid-generator:
+    title: UUID Generator Online - v1, v4, v5 & GUID Generator Tool
+    description: Generate universally unique identifiers (UUIDs) online. Create random UUID v4, time-based UUID v1, name-based UUID v3/v5, and nil UUIDs. Perfect for database primary keys, API request IDs, session identifiers, and distributed systems. RFC 4122 compliant 128-bit unique ID generator.
+
+  ipv4-address-converter:
+    title: IPv4 address converter
+    description: Convert an IP address into decimal, binary, hexadecimal, or even an IPv6 representation of it.
+
+  text-statistics:
+    title: Text statistics
+    description: Get information about a text, the number of characters, the number of words, its size in bytes, ...
+
+  text-to-nato-alphabet:
+    title: Text to NATO Phonetic Alphabet Converter - Military & Aviation Alphabet
+    description: Convert text to NATO phonetic alphabet (Alpha, Bravo, Charlie). Military and aviation alphabet converter for clear radio communication. Perfect for spelling over the phone, call centers, military, and aviation use. Free online NATO alphabet translator with ICAO phonetic code support.
+
+  basic-auth-generator:
+    title: Basic Auth Generator Online - HTTP Authorization Header Encoder Free
+    description: Generate HTTP Basic Authentication headers from username and password. Encode credentials to Base64 format for Authorization headers. Free online basic auth generator for REST API testing, cURL commands, Postman requests, and HTTP authentication. Create secure basic auth tokens for API development and web service integration.
+
+  text-to-unicode:
+    title: Text to Unicode Converter - UTF-8, UTF-16 & Character Code Point Tool
+    description: Convert text to Unicode code points and vice versa. Encode characters to UTF-8, UTF-16, UTF-32 formats. Get Unicode escape sequences, hex values, and decimal representations. Perfect for emoji conversion, special characters, and international text encoding. Free online Unicode converter with character lookup.
+
+  ipv4-range-expander:
+    title: IPv4 range expander
+    description: Given a start and an end IPv4 address, this tool calculates a valid IPv4 subnet along with its CIDR notation.
+
+  text-diff:
+    title: Text diff
+    description: Compare two texts and see the differences between them.
+
+  otp-generator:
+    title: OTP code generator
+    description: Generate and validate time-based OTP (one time password) for multi-factor authentication.
+
+  url-encoder:
+    title: URL Encoder & Decoder Online - Encode/Decode URL-Formatted Strings Free
+    description: Encode text to URL-encoded format (also known as "percent-encoded"), or decode from it.
+
+  text-to-binary:
+    title: Text to Binary Converter - ASCII to Binary Encoder & Decoder Online
+    description: Convert text to binary code and binary to text online. Encode ASCII characters to 8-bit binary representation and decode binary strings back to text. Free online binary converter for encoding, decoding, and understanding binary code. Perfect for learning binary, programming, and data encoding.
+
+  xml-to-json:
+    title: XML to JSON Converter Online - Parse & Convert XML Files Free
+    description: Convert XML to JSON format online. Parse XML files and data to JSON instantly. Free XML to JSON converter with validation. Perfect for API development, data transformation, and format migration. Supports XML elements, attributes, and nested structures.
+
+  json-to-xml:
+    title: JSON to XML Converter Online - Convert JSON to XML Format Free
+    description: Convert JSON to XML format online. Transform JSON data to XML instantly. Free JSON to XML converter with structure preservation. Perfect for API integration, SOAP services, and legacy system compatibility. Generate clean XML from JSON objects.
+
+  markdown-to-html:
+    title: Markdown to HTML Converter Online - MD to HTML & PDF Export Free
+    description: Convert Markdown to HTML online with live preview. Parse MD files to HTML and export as PDF. Free Markdown converter supporting GitHub Flavored Markdown (GFM), CommonMark syntax. Perfect for README files, documentation, and content formatting. Print or save as PDF.
+
+  ascii-text-drawer:
+    title: ASCII Art Generator & Text Drawer - Figlet Font Banner Maker Online
+    description: Create ASCII art and text banners online. Convert text to ASCII art with multiple Figlet font styles. Free ASCII text generator for terminal banners, code comment art, GitHub README decoration, and Discord/Reddit messages. Supports 3D fonts, block letters, slant fonts, shadow styles, and calligraphy. Online ASCII art maker with copy and paste. Perfect for developers, programmers, and creative text design.

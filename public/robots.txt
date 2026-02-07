@@ -1,2 +1,87 @@
+# IT-Tools Robots.txt
+# https://it-tools.eu.cc/robots.txt
+# Last updated: 2026-02-06
+
+# Default rules for all crawlers
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /c-lib/
+Disallow: /*?*
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+Crawl-delay: 1
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Disallow: /c-lib/
+Disallow: /api/
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /c-lib/
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Disallow: /c-lib/
+Disallow: /api/
+Crawl-delay: 1
+
+# Baidu-specific rules (Chinese search engine)
+User-agent: Baiduspider
+Allow: /
+Disallow: /c-lib/
+Disallow: /api/
+Crawl-delay: 2
+
+# Yandex-specific rules (Russian search engine)
+User-agent: Yandex
+Allow: /
+Disallow: /c-lib/
+Disallow: /api/
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /c-lib/
+Crawl-delay: 1
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow common social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://it-tools.eu.cc/sitemap.xml
+
+# Additional information
+# Host: https://it-tools.eu.cc
+# Contact: https://github.com/waynew9527/it-tools/issues
