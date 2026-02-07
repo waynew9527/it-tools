@@ -1,9 +1,12 @@
-name: Docker nightly release
+name: Docker nightly release (DISABLED - Use docker-build-push.yml instead)
 
+# DISABLED: This workflow pushes to the original author's repository
+# Use .github/workflows/docker-build-push.yml for your own Docker Hub
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
+  # workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * *'
+
 
 jobs:
   check_date:
