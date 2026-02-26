@@ -10,7 +10,7 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
+useHead({ title: 'IT Tools - Your dev toolkit, all in one place' });
 const { t } = useI18n();
 
 const favoriteTools = computed(() => toolStore.favoriteTools);
@@ -23,6 +23,16 @@ function onUpdateFavoriteTools() {
 
 <template>
   <div class="pt-50px">
+    <div class="hero-intro">
+      <p class="hero-desc">
+        {{ $t('home.heroDesc') }}
+      </p>
+      <div class="hero-features">
+        <span class="hero-feature">⚡ {{ $t('home.feature1') }}</span>
+        <span class="hero-feature">🔒 {{ $t('home.feature2') }}</span>
+        <span class="hero-feature">🌐 {{ $t('home.feature3') }}</span>
+      </div>
+    </div>
     <div class="grid-wrapper">
       <div class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
         <ColoredCard v-if="config.showBanner" :title="$t('home.follow.title')" :icon="IconHeart">
@@ -87,6 +97,34 @@ function onUpdateFavoriteTools() {
 </template>
 
 <style scoped lang="less">
+.hero-intro {
+  margin-bottom: 24px;
+  padding: 16px 0 8px;
+
+  .hero-desc {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: 700px;
+  }
+
+  .hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .hero-feature {
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(128, 128, 255, 0.08);
+      color: #888;
+      border: 1px solid rgba(128, 128, 255, 0.15);
+    }
+  }
+}
+
 .height-enter-active,
 .height-leave-active {
   transition: all 0.5s ease-in-out;

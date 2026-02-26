@@ -14,6 +14,12 @@ import App from './App.vue';
 import router from './router';
 import { i18nPlugin } from './plugins/i18n.plugin';
 
+// One-time migration: default all users to dark mode on first load after this version
+if (!localStorage.getItem('theme-default-v1')) {
+    localStorage.setItem('vueuse-color-scheme', 'dark');
+    localStorage.setItem('theme-default-v1', '1');
+}
+
 registerSW();
 
 const app = createApp(App);

@@ -4,7 +4,11 @@ home:
     favoriteTools: '我的收藏'
     allTools: '全部工具'
     favoritesDndToolTip: '拖放重新排列收藏夹'
-  subtitle: '助力开发人员和 IT 工作者'
+  subtitle: '开发者的效率利器箱'
+  heroDesc: 'IT Tools 是一个免费、开源的在线工具集合，收录 60+ 款专为开发者和 IT 从业者设计的实用工具。编码、转换、生成、分析——一站完成，无需离开浏览器。'
+  feature1: '60+ 款工具'
+  feature2: '隐私优先，本地运行'
+  feature3: '免费开源'
   toggleMenu: '切换菜单'
   home: '主页'
   uiLib: 'UI 库'
@@ -29,21 +33,201 @@ home:
     mode: '颜色模式'
 about:
   content: >
-    # 关于 IT-Tools
+    # 关于 IT Tools
 
-    IT-Tools 由 [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) 用 ❤ 开发，汇集了对开发人员和 IT 从业者有用的工具。如果对您有帮助，请将其分享给您的朋友，并且添加到收藏夹中！
+    ## 什么是 IT Tools？
 
-    IT-Tools 永久免费且开源（GPL-3.0 许可证），但需要资金用于托管和续订域名。如果您想支持我的工作，并鼓励我添加更多工具，请考虑通过 [赞助我](https://www.buymeacoffee.com/cthmsst) 进行支持。
+    **IT Tools** 是一个免费、开源的在线工具集合，专为开发者、IT 专业人员和技术用户设计。无论您需要编码数据、生成令牌、转换文件格式，还是分析网络配置——IT Tools 都能以简洁快速的界面满足您的需求。
+
+    所有工具均**完全在您的浏览器中运行**，数据不会上传到任何服务器，充分保护您的隐私和安全。
+
+    ## 我们的使命
+
+    我们相信开发者工具应该是免费、可访问且注重隐私的。IT Tools 提供一站式工具集，消除了安装本地软件或寻找不可靠第三方服务的需要。
+
+    ## 本版本说明
+
+    本版本是基于 [Corentin Thomasset](https://corentin.tech) 开发的原版 [IT-Tools](https://github.com/CorentinTh/it-tools) 项目的定制二次开发版本，在界面、工具和多语言支持方面进行了改进。
+
+    源代码：[https://github.com/waynew9527/it-tools](https://github.com/waynew9527/it-tools)
 
     ## 技术
 
-    IT-Tools 采用 Vue.js（Vue 3）和 Naive UI 组件库开发，并由 Vercel 托管和持续部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) 文件中找到完整的列表。
+    IT Tools 使用 **Vue 3**、**Naive UI** 组件库开发，并通过 **Vite** 打包。所有加密操作和数据转换均在客户端使用经过审计的开源库执行。
 
-    ## 发现了 Bug？缺少工具？
+    ## 隐私与安全
 
-    如果目前这里没有您需要的工具，并且您认为它可能有用，欢迎在 GitHub 仓库的 [issues](https://github.com/CorentinTh/it-tools/issues/new/choose) 中提交新增功能的请求。
+    我们**不**收集任何个人数据或使用统计信息。所有工具操作均在您的浏览器本地执行。请查看我们的[隐私政策](/privacy)了解详情。
 
-    如果您发现了 Bug，或者某些功能未能按预期工作，请在 GitHub 仓库的 [issues](https://github.com/CorentinTh/it-tools/issues/new/choose) 中提交错误报告。
+    ## 报告问题或请求新功能
+
+    发现 Bug 或缺少某个工具？请在我们的 GitHub 仓库提交 Issue：
+    [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+    ## 联系我们
+
+    如需商务合作或其他问题，请通过 GitHub Issues 联系：
+    [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+privacy:
+  pageTitle: '隐私政策 - IT Tools'
+  metaDescription: 'IT Tools 隐私政策：我们尊重您的隐私。所有工具在浏览器客户端运行，我们不收集或存储任何个人数据。'
+  content: >
+    # 隐私政策
+
+    **最后更新：2026年2月**
+
+    IT Tools（"我们"或"本网站"）运营网站 [https://it-tools.eu.cc](https://it-tools.eu.cc)（以下简称"服务"）。本页面说明我们在您使用服务时的数据收集、使用和披露政策。
+
+    ## 一、我们不收集的数据
+
+    IT Tools 以隐私为核心原则设计。我们**不**收集、存储或传输：
+
+    - 您在工具中输入的任何文本、文件或数据
+    - 个人身份信息（姓名、邮箱、地址、电话号码）
+    - 超出标准服务器日志的浏览历史或使用行为
+    - 支付或财务信息
+
+    **所有工具操作完全在您的浏览器（客户端）中执行。** 您的数据不会离开您的设备。
+
+    ## 二、自动收集的信息
+
+    当您访问本网站时，标准服务器日志可能自动记录：
+
+    - 您的 IP 地址
+    - 浏览器类型和版本
+    - 操作系统
+    - 访问日期和时间
+    - 访问的页面
+
+    这些信息仅用于维护服务的安全和运营，不与任何个人身份信息关联。
+
+    ## 三、Cookie
+
+    IT Tools 仅使用服务运营所必需的功能性 Cookie（例如保存您的深色/浅色模式、语言和收藏工具偏好设置）。我们**不**使用跟踪 Cookie 或第三方广告 Cookie。
+
+    ## 四、第三方服务
+
+    我们可能使用以下第三方服务：
+
+    - **Google Fonts** – 用于加载网络字体。Google 可能根据其[隐私政策](https://policies.google.com/privacy)收集数据。
+    - **Google AdSense** – 用于展示广告。Google 使用 Cookie 根据您的历史访问提供广告。您可通过 [Google 广告设置](https://adssettings.google.com/) 选择退出个性化广告。
+
+    ## 五、广告
+
+    我们使用 Google AdSense 在网站上展示广告。作为第三方供应商，Google 使用 Cookie 根据您对本网站及其他网站的访问记录投放广告。您可访问 [Google 广告设置](https://adssettings.google.com/) 选择退出个性化广告。
+
+    ## 六、数据安全
+
+    我们采取合理措施保护网站安全。由于我们不在服务器上存储用户数据，数据泄露对您的风险极低。
+
+    ## 七、儿童隐私
+
+    本服务不面向 13 岁以下儿童。我们不故意收集 13 岁以下儿童的个人数据。
+
+    ## 八、隐私政策变更
+
+    我们可能不时更新本隐私政策。如有变更，我们将通过更新页面顶部的"最后更新"日期来通知您。建议您定期查看本隐私政策。
+
+    ## 九、联系我们
+
+    如对本隐私政策有任何疑问，请通过以下方式联系我们：
+
+    - GitHub Issues：[https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+    - 网站：[https://it-tools.eu.cc](https://it-tools.eu.cc)
+
+terms:
+  pageTitle: '服务条款 - IT Tools'
+  metaDescription: 'IT Tools 服务条款：免费的在线开发者工具集合。使用 IT Tools 即表示您同意本服务条款。'
+  content: >
+    # 服务条款
+
+    **最后更新：2026年2月**
+
+    欢迎使用 IT Tools。通过访问或使用我们位于 [https://it-tools.eu.cc](https://it-tools.eu.cc) 的网站（以下简称"服务"），您同意受本服务条款（以下简称"条款"）的约束。请仔细阅读。
+
+    ## 一、条款接受
+
+    访问和使用 IT Tools 即表示您接受并同意受本条款及我们的[隐私政策](/privacy)约束。如果您不同意本条款，请不要使用本服务。
+
+    ## 二、服务描述
+
+    IT Tools 为开发者和 IT 专业人员提供免费的在线实用工具集合，包括但不限于：文本转换器、编码/解码工具、生成器、格式化工具和计算器。
+
+    ## 三、免费使用
+
+    IT Tools 免费提供。在遵守本条款的前提下，您可以将本服务用于个人和商业目的，无需付费。
+
+    ## 四、知识产权
+
+    本服务及其原创内容、功能归 IT Tools 贡献者所有，并在 [GPL-3.0 许可证](https://github.com/waynew9527/it-tools/blob/main/LICENSE)下授权。原始项目由 [Corentin Thomasset](https://corentin.tech) 创建。
+
+    ## 五、可接受的使用
+
+    您同意不将本服务用于：
+
+    - 违反任何适用的地方、国家或国际法律法规的行为
+    - 发送未经请求或未经授权的广告或宣传材料
+    - 从事限制或妨碍他人使用或享受本服务的行为
+    - 尝试未经授权访问服务的任何部分
+
+    ## 六、免责声明
+
+    本服务按**"现状"和"可用状态"**提供，不提供任何明示或暗示的保证。我们不保证服务不会中断、无错误或不含病毒或其他有害内容。
+
+    ## 七、责任限制
+
+    在法律允许的最大范围内，IT Tools 及其贡献者对于因您使用或无法使用本服务而导致的任何间接、附带、特殊、后果性或惩罚性损害不承担责任。
+
+    ## 八、第三方链接
+
+    本服务可能包含指向第三方网站的链接。我们对第三方网站的内容、隐私政策或做法没有控制权，也不承担任何责任。
+
+    ## 九、广告
+
+    本服务展示由 Google AdSense 及其他广告合作伙伴提供的广告，这些广告收入支持本服务的免费运营。
+
+    ## 十、条款变更
+
+    我们保留随时修改本条款的权利。我们将通过更新"最后更新"日期来标明变更。在变更后继续使用本服务即表示接受新条款。
+
+    ## 十一、适用法律
+
+    本条款受适用法律约束和解释。任何争议应通过善意协商解决，或在必要时通过适当的法律途径解决。
+
+    ## 十二、联系我们
+
+    如对本条款有任何疑问，请通过以下方式联系我们：
+
+    - GitHub Issues：[https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+    - 网站：[https://it-tools.eu.cc](https://it-tools.eu.cc)
+
+
+
+contact:
+  pageTitle: '联系我们 - IT Tools'
+  metaDescription: '联系 IT Tools 团队。通过 GitHub Issues 或电子邮件反馈问题、请求新功能或咨询合作事宜。'
+  content: >
+    # 联系我们
+
+    感谢您使用 IT Tools！我们欢迎您的反馈、错误报告和功能建议。
+
+    ## 联系方式
+
+    **电子邮件**：[support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc)
+
+    如需提交错误报告或功能请求，请使用我们的 GitHub 仓库：
+
+    **GitHub Issues**：[https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+    ## 回复时间
+
+    我们致力于在 **2-5 个工作日**内回复所有询问。如遇紧急问题，请在 GitHub 上提交 Issue 以获得更快的社区支持。
+
+    ## 广告与合作
+
+    如有广告合作或商业合作咨询，请发送邮件至 [support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc)。
+
 
 404:
   notFound: '404 页面不存在'

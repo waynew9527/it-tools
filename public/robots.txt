@@ -6,7 +6,6 @@
 User-agent: *
 Allow: /
 Disallow: /c-lib/
-Disallow: /*?*
 Disallow: /api/
 Disallow: /*.json$
 Disallow: /node_modules/

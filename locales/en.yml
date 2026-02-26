@@ -4,7 +4,11 @@ home:
     favoriteTools: 'Your favorite tools'
     allTools: 'All the tools'
     favoritesDndToolTip: 'Drag and drop to reorder favorites'
-  subtitle: 'Handy tools for developers'
+  subtitle: 'Your dev toolkit, all in one place'
+  heroDesc: 'IT Tools is a free, open-source collection of 60+ online utilities built for developers and IT professionals. Encode, convert, generate, and analyze — all without leaving your browser.'
+  feature1: '60+ tools'
+  feature2: 'Privacy-first, runs in browser'
+  feature3: 'Free & open source'
   toggleMenu: 'Toggle menu'
   home: Home
   uiLib: 'UI Lib'
@@ -29,29 +33,201 @@ home:
     mode: 'Toggle dark/light mode'
 about:
   content: >
-    # About IT-Tools
+    # About IT Tools
 
-    ## Secondary Development Version
+    ## What is IT Tools?
 
-    This is a secondary development version based on the original IT-Tools project. You can find this customized version at: [https://github.com/waynew9527/it-tools](https://github.com/waynew9527/it-tools)
+    **IT Tools** is a free, open-source collection of handy online utilities designed for developers, IT professionals, and power users. Whether you need to encode data, generate tokens, convert file formats, or analyze network configurations — IT Tools has you covered with a clean and fast interface.
 
-    ## About the Original Project
+    All tools run **entirely in your browser**. No data is ever uploaded to any server, ensuring your privacy and security.
 
-    This wonderful website, made with ❤ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
+    ## Our Mission
 
-    IT Tools is open-source (under the GPL-3.0 license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
+    We believe developer tools should be free, accessible, and private. IT Tools is built to provide a one-stop toolkit for everyday development tasks, eliminating the need to install local software or search for unreliable third-party services.
+
+    ## This Version
+
+    This is a customized secondary development version based on the original [IT-Tools](https://github.com/CorentinTh/it-tools) project by [Corentin Thomasset](https://corentin.tech). Enhancements include improved UI, additional tools, and extended language support.
+
+    Source code: [https://github.com/waynew9527/it-tools](https://github.com/waynew9527/it-tools)
 
     ## Technologies
 
-    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
+    IT Tools is built with **Vue 3**, the **Naive UI** component library, and bundled with **Vite**. All cryptographic operations and data transformations run client-side using well-audited open-source libraries.
 
-    ## Found a bug? A tool is missing?
+    ## Privacy & Security
 
-    For this secondary development version, please submit issues to: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+    We do **not** collect any personal data or usage statistics. All tool operations are performed locally in your browser. See our [Privacy Policy](/privacy) for full details.
 
-    For the original project, if you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    ## Report an Issue or Request a Feature
 
-    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    Found a bug or missing a tool? Please submit an issue on our GitHub repository:
+    [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+    ## Contact
+
+    For business inquiries or collaboration, please reach out via GitHub Issues:
+    [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+privacy:
+  pageTitle: 'Privacy Policy - IT Tools'
+  metaDescription: 'IT Tools Privacy Policy: We respect your privacy. All tools run client-side in your browser. No personal data is collected or stored.'
+  content: >
+    # Privacy Policy
+
+    **Last updated: February 2026**
+
+    IT Tools ("we", "us", or "our") operates the website [https://it-tools.eu.cc](https://it-tools.eu.cc) (the "Service"). This page explains our policies regarding the collection, use, and disclosure of personal data when you use our Service.
+
+    ## 1. Data We Do NOT Collect
+
+    IT Tools is designed with privacy as a core principle. We do **not** collect, store, or transmit:
+
+    - Any text, files, or data you enter into our tools
+    - Personal identification information (name, email, address, phone number)
+    - Browsing history or usage patterns beyond what standard web servers log
+    - Payment or financial information
+
+    **All tool operations are performed entirely within your browser (client-side).** Your data never leaves your device.
+
+    ## 2. Automatically Collected Information
+
+    When you visit our website, standard server logs may automatically record:
+
+    - Your IP address
+    - Browser type and version
+    - Operating system
+    - Date and time of your visit
+    - Pages visited on our Service
+
+    This information is used solely for maintaining the security and operation of the Service and is not linked to any personally identifiable information.
+
+    ## 3. Cookies
+
+    IT Tools uses only essential functional cookies necessary for the Service to operate (for example, saving your preferences such as dark/light mode, language, and favorite tools). We do **not** use tracking cookies or third-party advertising cookies.
+
+    ## 4. Third-Party Services
+
+    We may use third-party services including:
+
+    - **Google Fonts** – for loading web fonts. Google may collect data per their [Privacy Policy](https://policies.google.com/privacy).
+    - **Google AdSense** – to display advertisements. Google uses cookies to serve ads based on your prior visits. You may opt out via [Google's Ads Settings](https://adssettings.google.com/).
+
+    ## 5. Advertising
+
+    We use Google AdSense to display advertisements on our website. Google, as a third-party vendor, uses cookies to serve ads based on your visits to this and other websites. You can opt out of personalized advertising by visiting [Google Ads Settings](https://adssettings.google.com/).
+
+    ## 6. Data Security
+
+    We take reasonable measures to protect the security of our website. Since we do not store user data on our servers, the risk of data breaches affecting you is minimized.
+
+    ## 7. Children's Privacy
+
+    Our Service does not address anyone under the age of 13. We do not knowingly collect personal data from children under 13.
+
+    ## 8. Changes to This Privacy Policy
+
+    We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page. We encourage you to review this Privacy Policy periodically.
+
+    ## 9. Contact Us
+
+    If you have any questions about this Privacy Policy, please contact us:
+
+    - GitHub Issues: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+    - Website: [https://it-tools.eu.cc](https://it-tools.eu.cc)
+
+terms:
+  pageTitle: 'Terms of Service - IT Tools'
+  metaDescription: 'IT Tools Terms of Service: Free online developer tools. By using IT Tools you agree to these terms of service.'
+  content: >
+    # Terms of Service
+
+    **Last updated: February 2026**
+
+    Welcome to IT Tools. By accessing or using our website at [https://it-tools.eu.cc](https://it-tools.eu.cc) (the "Service"), you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.
+
+    ## 1. Acceptance of Terms
+
+    By accessing and using IT Tools, you accept and agree to be bound by these Terms and our [Privacy Policy](/privacy). If you do not agree to these Terms, please do not use the Service.
+
+    ## 2. Description of Service
+
+    IT Tools provides a free collection of online utility tools for developers and IT professionals. These tools include, but are not limited to: text converters, encoders/decoders, generators, formatters, and calculators.
+
+    ## 3. Free to Use
+
+    IT Tools is provided free of charge. You may use the Service for personal and commercial purposes without payment, subject to these Terms.
+
+    ## 4. Intellectual Property
+
+    The Service and its original content, features, and functionality are owned by IT Tools contributors and are licensed under the [GPL-3.0 License](https://github.com/waynew9527/it-tools/blob/main/LICENSE). The original project is created by [Corentin Thomasset](https://corentin.tech).
+
+    ## 5. Acceptable Use
+
+    You agree not to use the Service:
+
+    - In any way that violates any applicable local, national, or international law or regulation
+    - To transmit any unsolicited or unauthorized advertising or promotional material
+    - To engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Service
+    - To attempt to gain unauthorized access to any part of the Service
+
+    ## 6. Disclaimer of Warranties
+
+    The Service is provided on an **"AS IS" and "AS AVAILABLE"** basis without any warranties of any kind, either express or implied. We do not warrant that the Service will be uninterrupted, error-free, or free of viruses or other harmful components.
+
+    ## 7. Limitation of Liability
+
+    To the fullest extent permitted by law, IT Tools and its contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of, or inability to use, the Service.
+
+    ## 8. Third-Party Links
+
+    Our Service may contain links to third-party websites. We have no control over the content, privacy policies, or practices of any third-party sites and assume no responsibility for them.
+
+    ## 9. Advertising
+
+    The Service displays advertisements provided by Google AdSense and potentially other advertising partners. These ads help support the free operation of the Service.
+
+    ## 10. Changes to Terms
+
+    We reserve the right to modify these Terms at any time. We will indicate changes by updating the "Last updated" date. Continued use of the Service after any changes constitutes acceptance of the new Terms.
+
+    ## 11. Governing Law
+
+    These Terms shall be governed by and construed in accordance with applicable laws. Any disputes shall be resolved through good faith negotiation or, if necessary, appropriate legal channels.
+
+    ## 12. Contact Us
+
+    If you have any questions about these Terms, please contact us:
+
+    - GitHub Issues: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+    - Website: [https://it-tools.eu.cc](https://it-tools.eu.cc)
+
+
+
+contact:
+  pageTitle: 'Contact - IT Tools'
+  metaDescription: 'Get in touch with IT Tools. Report bugs, request features, or ask questions via GitHub Issues or email.'
+  content: >
+    # Contact Us
+
+    Thank you for using IT Tools! We welcome feedback, bug reports, and feature requests.
+
+    ## Get in Touch
+
+    **Email**: [support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc)
+
+    For bug reports and feature requests, please use our GitHub repository:
+
+    **GitHub Issues**: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
+
+    ## Response Time
+
+    We aim to respond to all inquiries within **2–5 business days**. For urgent issues, please open a GitHub issue for faster community support.
+
+    ## Advertising & Partnership
+
+    For advertising inquiries or partnership opportunities, please email us at [support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc).
+
 
 404:
   notFound: '404 Not Found'

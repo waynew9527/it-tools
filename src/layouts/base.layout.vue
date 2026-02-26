@@ -37,7 +37,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            <span class="title-it">IT</span><span class="title-dot">·</span><span class="title-tools">TOOLS</span>
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -58,15 +58,27 @@ const tools = computed<ToolCategory[]>(() => [
         <CollapsibleToolMenu :tools-by-category="tools" />
 
         <div class="footer">
-          <div>
+          <div class="footer-links">
+            <RouterLink to="/about" class="footer-link-item">
+              About
+            </RouterLink>
+            <span class="footer-sep">·</span>
+            <RouterLink to="/privacy" class="footer-link-item">
+              Privacy
+            </RouterLink>
+            <span class="footer-sep">·</span>
+            <RouterLink to="/terms" class="footer-link-item">
+              Terms
+            </RouterLink>
+            <span class="footer-sep">·</span>
+            <RouterLink to="/contact" class="footer-link-item">
+              Contact
+            </RouterLink>
+          </div>
+          <div class="footer-copy">
+            © {{ new Date().getFullYear() }} ·
             <c-link target="_blank" rel="noopener" href="https://it-tools.eu.cc">
               IT-Tools.eu.cc
-            </c-link>
-          </div>
-          <div>
-            © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
             </c-link>
           </div>
         </div>
@@ -87,12 +99,6 @@ const tools = computed<ToolCategory[]>(() => [
         <c-tooltip :tooltip="$t('home.home')" position="bottom">
           <c-button to="/" circle variant="text" :aria-label="$t('home.home')">
             <NIcon size="25" :component="Home2" />
-          </c-button>
-        </c-tooltip>
-
-        <c-tooltip :tooltip="$t('home.uiLib')" position="bottom">
-          <c-button v-if="config.app.env === 'development'" to="/c-lib" circle variant="text" :aria-label="$t('home.uiLib')">
-            <icon-mdi:brush-variant text-20px />
           </c-button>
         </c-tooltip>
 
@@ -153,7 +159,56 @@ const tools = computed<ToolCategory[]>(() => [
   text-align: center;
   color: #838587;
   margin-top: 20px;
-  padding: 20px 0;
+  padding: 20px 12px 24px;
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 2px;
+    margin-bottom: 10px;
+
+    .footer-link-item {
+      position: relative;
+      color: #838587;
+      text-decoration: none;
+      font-size: 11.5px;
+      padding: 2px 6px;
+      transition: color 0.25s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+        right: 6px;
+        height: 1px;
+        background: v-bind('themeVars.primaryColor');
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.25s ease;
+      }
+
+      &:hover {
+        color: v-bind('themeVars.primaryColor');
+        &::after { transform: scaleX(1); }
+      }
+    }
+
+    .footer-sep {
+      font-size: 14px;
+      color: #555;
+      line-height: 1;
+      user-select: none;
+    }
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    opacity: 0.55;
+    letter-spacing: 0.03em;
+  }
 }
 
 .sider-content {
@@ -182,8 +237,24 @@ const tools = computed<ToolCategory[]>(() => [
     color: #fff;
 
     .title {
-      font-size: 25px;
-      font-weight: 600;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+
+      .title-it {
+        color: v-bind('themeVars.primaryColor');
+      }
+
+      .title-dot {
+        color: v-bind('themeVars.primaryColor');
+        opacity: 0.6;
+        margin: 0 2px;
+        font-weight: 300;
+      }
+
+      .title-tools {
+        color: #fff;
+      }
     }
 
     .divider {
