@@ -9,7 +9,6 @@ import HeroGradient from '../assets/hero-gradient.svg?component';
 import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
 import { useStyleStore } from '@/stores/style.store';
-import { config } from '@/config';
 import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
 import { useTracker } from '@/modules/tracker/tracker.services';
@@ -25,7 +24,9 @@ const toolStore = useToolStore();
 const { favoriteTools, toolsByCategory } = storeToRefs(toolStore);
 
 const tools = computed<ToolCategory[]>(() => [
-  ...(favoriteTools.value.length > 0 ? [{ name: t('tools.categories.favorite-tools'), components: favoriteTools.value }] : []),
+  ...(favoriteTools.value.length > 0
+    ? [{ name: t('tools.categories.favorite-tools'), components: favoriteTools.value }]
+    : []),
   ...toolsByCategory.value,
 ]);
 </script>
@@ -47,6 +48,20 @@ const tools = computed<ToolCategory[]>(() => [
       </RouterLink>
 
       <div class="sider-content">
+        <div class="sider-top-links">
+          <RouterLink to="/blog" class="sider-link-item"> Blog </RouterLink>
+          <span class="sider-sep">·</span>
+          <RouterLink to="/about" class="sider-link-item"> About </RouterLink>
+          <span class="sider-sep">·</span>
+          <RouterLink to="/privacy" class="sider-link-item"> Privacy </RouterLink>
+          <span class="sider-sep">·</span>
+          <RouterLink to="/terms" class="sider-link-item"> Terms </RouterLink>
+          <span class="sider-sep">·</span>
+          <RouterLink to="/contact" class="sider-link-item"> Contact </RouterLink>
+          <span class="sider-sep">·</span>
+          <RouterLink to="/faq" class="sider-link-item"> FAQ </RouterLink>
+        </div>
+
         <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
           <locale-selector w="90%" />
 
@@ -59,27 +74,21 @@ const tools = computed<ToolCategory[]>(() => [
 
         <div class="footer">
           <div class="footer-links">
-            <RouterLink to="/about" class="footer-link-item">
-              About
-            </RouterLink>
+            <RouterLink to="/blog" class="footer-link-item"> Blog </RouterLink>
             <span class="footer-sep">·</span>
-            <RouterLink to="/privacy" class="footer-link-item">
-              Privacy
-            </RouterLink>
+            <RouterLink to="/about" class="footer-link-item"> About </RouterLink>
             <span class="footer-sep">·</span>
-            <RouterLink to="/terms" class="footer-link-item">
-              Terms
-            </RouterLink>
+            <RouterLink to="/privacy" class="footer-link-item"> Privacy </RouterLink>
             <span class="footer-sep">·</span>
-            <RouterLink to="/contact" class="footer-link-item">
-              Contact
-            </RouterLink>
+            <RouterLink to="/terms" class="footer-link-item"> Terms </RouterLink>
+            <span class="footer-sep">·</span>
+            <RouterLink to="/contact" class="footer-link-item"> Contact </RouterLink>
+            <span class="footer-sep">·</span>
+            <RouterLink to="/faq" class="footer-link-item"> FAQ </RouterLink>
           </div>
           <div class="footer-copy">
             © {{ new Date().getFullYear() }} ·
-            <c-link target="_blank" rel="noopener" href="https://it-tools.eu.cc">
-              IT-Tools.eu.cc
-            </c-link>
+            <c-link target="_blank" rel="noopener" href="https://it-tools.eu.cc"> IT-Tools.eu.cc </c-link>
           </div>
         </div>
       </div>
@@ -192,7 +201,9 @@ const tools = computed<ToolCategory[]>(() => [
 
       &:hover {
         color: v-bind('themeVars.primaryColor');
-        &::after { transform: scaleX(1); }
+        &::after {
+          transform: scaleX(1);
+        }
       }
     }
 
@@ -214,6 +225,44 @@ const tools = computed<ToolCategory[]>(() => [
 .sider-content {
   padding-top: 160px;
   padding-bottom: 200px;
+}
+
+.sider-top-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 2px;
+  padding: 8px 12px 16px;
+  border-bottom: 1px solid var(--n-border-color);
+  margin-bottom: 8px;
+
+  .sider-link-item {
+    position: relative;
+    color: var(--n-text-color);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 2px 6px;
+    opacity: 0.8;
+    transition: all 0.25s;
+
+    &:hover {
+      opacity: 1;
+      color: v-bind('themeVars.primaryColor');
+    }
+
+    &.router-link-active {
+      color: v-bind('themeVars.primaryColor');
+      opacity: 1;
+    }
+  }
+
+  .sider-sep {
+    font-size: 12px;
+    color: var(--n-text-color);
+    opacity: 0.4;
+    line-height: 1;
+  }
 }
 
 .hero-wrapper {

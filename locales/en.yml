@@ -202,8 +202,6 @@ terms:
     - GitHub Issues: [https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
     - Website: [https://it-tools.eu.cc](https://it-tools.eu.cc)
 
-
-
 contact:
   pageTitle: 'Contact - IT Tools'
   metaDescription: 'Get in touch with IT Tools. Report bugs, request features, or ask questions via GitHub Issues or email.'
@@ -228,6 +226,76 @@ contact:
 
     For advertising inquiries or partnership opportunities, please email us at [support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc).
 
+faq:
+  content: |
+    # Frequently Asked Questions
+
+    Find answers to common questions about IT Tools below.
+
+    ## General
+
+    ### What is IT Tools?
+
+    IT Tools is a free, open-source collection of online utilities designed for developers and IT professionals. It includes tools for encoding, decoding, encryption, conversion, generation, and more - all running entirely in your browser.
+
+    ### Is IT Tools free to use?
+
+    Yes, IT Tools is completely free. You can use all tools without any cost. The project is open-source, and contributions are welcome.
+
+    ### Do I need to install anything?
+
+    No. IT Tools runs entirely in your browser. Simply visit our website and start using the tools immediately. No registration or installation required.
+
+    ## Privacy and Security
+
+    ### Is my data safe?
+
+    Yes. All tool operations are performed client-side in your browser. Your data never leaves your device or gets sent to our servers. We do not store, log, or transmit any personal information you enter into the tools.
+
+    ### Do you use cookies?
+
+    We use only essential cookies to save your preferences (theme, language, favorite tools). We do not use tracking cookies or third-party advertising cookies.
+
+    ### Can I use IT Tools offline?
+
+    Yes, after the first load, most tools work offline. However, some tools may require an internet connection.
+
+    ## Features
+
+    ### What types of tools are available?
+
+    We offer tools in these categories: Crypto, Converters, Generators, Network, Math, Text tools, and more.
+
+    ### How do I save favorite tools?
+
+    Click the star icon on any tool to add it to your favorites. Your favorites are saved locally in your browser.
+
+    ### Can I request a new tool?
+
+    Absolutely. Please open a feature request on our GitHub Issues page.
+
+    ## Technical
+
+    ### What technologies are used?
+
+    IT Tools is built with Vue 3, Naive UI, and Vite. Various open-source libraries are used for crypto, parsing, and formatting.
+
+    ### Is the source code available?
+
+    Yes. The project is open-source under the GNU GPLv3 license. You can find the source code on our GitHub repository.
+
+    ### How can I contribute?
+
+    You can contribute by reporting bugs, suggesting new features, improving documentation, or submitting pull requests.
+
+    ## Contact
+
+    ### How can I get support?
+
+    For bug reports or feature requests, please use GitHub Issues. For other inquiries, email us at support at it-tools.eu.cc.
+
+  pageTitle: 'FAQ - IT Tools'
+  metaDescription: 'Frequently Asked Questions about IT Tools. Learn about privacy, features, and how to use our developer tools.'
 
 404:
   notFound: '404 Not Found'

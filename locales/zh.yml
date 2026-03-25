@@ -202,8 +202,6 @@ terms:
     - GitHub Issues：[https://github.com/waynew9527/it-tools/issues](https://github.com/waynew9527/it-tools/issues)
     - 网站：[https://it-tools.eu.cc](https://it-tools.eu.cc)
 
-
-
 contact:
   pageTitle: '联系我们 - IT Tools'
   metaDescription: '联系 IT Tools 团队。通过 GitHub Issues 或电子邮件反馈问题、请求新功能或咨询合作事宜。'
@@ -228,6 +226,76 @@ contact:
 
     如有广告合作或商业合作咨询，请发送邮件至 [support{'@'}it-tools.eu.cc](mailto:support{'@'}it-tools.eu.cc)。
 
+faq:
+  content: |
+    # 常见问题
+
+    以下是关于 IT Tools 的常见问题解答。
+
+    ## 通用问题
+
+    ### 什么是 IT Tools？
+
+    IT Tools 是一个免费、开源的在线工具集合，专为开发者和 IT 专业人员设计。包括编码、解密、加密、转换、生成等多种功能，全部在浏览器中运行。
+
+    ### IT Tools 是免费的吗？
+
+    是的，IT Tools 完全免费。您可以免费使用所有工具，无需付费。项目是开源的，欢迎贡献。
+
+    ### 需要安装任何软件吗？
+
+    不需要。IT Tools 完全在浏览器中运行。只需访问我们的网站，即可立即使用工具。无需注册或安装。
+
+    ## 隐私与安全
+
+    ### 我的数据安全吗？
+
+    是的。所有工具操作都在您的浏览器中本地执行。您的数据不会离开您的设备，也不会发送到我们的服务器。
+
+    ### 你们使用 cookies 吗？
+
+    我们仅使用必要的 cookies 来保存您的偏好设置（主题、语言、收藏工具）。我们不使用追踪 cookies 或第三方广告 cookies。
+
+    ### 可以离线使用 IT Tools 吗？
+
+    可以。首次加载后，大多数工具都可以离线使用。但部分工具可能需要网络连接。
+
+    ## 功能特性
+
+    ### 有哪些类型的工具？
+
+    我们提供以下类别的工具：加密工具、转换器、生成器、网络工具、数学工具、文本工具等。
+
+    ### 如何收藏工具？
+
+    点击任意工具上的星标图标即可添加到收藏。您的收藏保存在浏览器的本地存储中。
+
+    ### 可以请求新工具吗？
+
+    当然可以。请在我们的 GitHub Issues 页面提交功能请求。
+
+    ## 技术问题
+
+    ### 使用了什么技术？
+
+    IT Tools 基于 Vue 3、Naive UI 和 Vite 构建。使用了各种用于加密、解析和格式化的开源库。
+
+    ### 源代码可用吗？
+
+    可用。项目采用 GNU GPLv3 开源许可证。您可以在我们的 GitHub 仓库查看源代码。
+
+    ### 如何贡献？
+
+    您可以通过以下方式贡献：报告错误、建议新功能、改进文档、提交 Pull Request。
+
+    ## 联系我们
+
+    ### 如何获取支持？
+
+    如需错误报告或功能请求，请使用 GitHub Issues。其他问题请发送邮件至 support at it-tools.eu.cc。
+
+  pageTitle: '常见问题 - IT Tools'
+  metaDescription: 'IT Tools 常见问题解答。了解更多关于隐私保护、功能特性以及如何使用开发者工具。'
 
 404:
   notFound: '404 页面不存在'

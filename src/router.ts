@@ -15,7 +15,7 @@ const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
 const toolsRedirectRoutes = tools
   .filter(({ redirectFrom }) => redirectFrom && redirectFrom.length > 0)
   .flatMap(
-    ({ path, redirectFrom }) => redirectFrom?.map(redirectSource => ({ path: redirectSource, redirect: path })) ?? [],
+    ({ path, redirectFrom }) => redirectFrom?.map((redirectSource) => ({ path: redirectSource, redirect: path })) ?? [],
   );
 
 const router = createRouter({
@@ -45,6 +45,21 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('./pages/Contact.vue'),
+    },
+    {
+      path: '/faq',
+      name: 'faq',
+      component: () => import('./pages/Faq.vue'),
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('./pages/BlogList.page.vue'),
+    },
+    {
+      path: '/blog/:slug',
+      name: 'blog-post',
+      component: () => import('./pages/BlogPost.page.vue'),
     },
     ...toolsRoutes,
     ...toolsRedirectRoutes,
