@@ -7,6 +7,7 @@ import { useStyleStore } from './stores/style.store';
 import { useI18n } from 'vue-i18n';
 import { syncRef } from '@vueuse/core';
 import { useStorage } from '@vueuse/core';
+import CookieConsent from './components/CookieConsent.vue';
 
 const route = useRoute();
 const layout = computed(() => route?.meta?.layout ?? layouts.base);
@@ -28,6 +29,7 @@ syncRef(locale, useStorage('locale', locale));
         <component :is="layout">
           <RouterView />
         </component>
+        <CookieConsent />
       </NNotificationProvider>
     </NMessageProvider>
   </n-config-provider>

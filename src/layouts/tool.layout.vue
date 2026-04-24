@@ -101,11 +101,12 @@ const head = computed<HeadObject>(() => ({
   ],
 }));
 useHead(head);
-const { t } = useI18n();
+const { t, te } = useI18n();
 
 const i18nKey = computed<string>(() => route.path.trim().replace('/', ''));
 const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, String(route.meta.name)));
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
+const hasArticle = computed<boolean>(() => te(`tools.${i18nKey.value}.article`));
 </script>
 
 <template>
@@ -132,6 +133,11 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
 
     <div class="tool-content">
       <slot />
+    </div>
+
+    <div v-if="hasArticle" class="tool-article-container">
+      <div class="separator-large" />
+      <c-markdown :markdown="t(`tools.${i18nKey.value}.article`)" class="tool-article" />
     </div>
   </BaseLayout>
 </template>
@@ -181,6 +187,25 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
 
       opacity: 0.7;
     }
+  }
+}
+
+.tool-article-container {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  .separator-large {
+    width: 100%;
+    height: 1px;
+    background: var(--n-border-color);
+    margin-bottom: 40px;
+  }
+
+  .tool-article {
+    opacity: 0.85;
+    line-height: 1.6;
   }
 }
 </style>

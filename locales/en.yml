@@ -334,6 +334,26 @@ tools:
   token-generator:
     title: Random Token Generator - API Keys, Passwords & Secure Strings
     description: Generate secure random tokens, API keys, passwords, and alphanumeric strings online. Create custom-length cryptographic tokens with uppercase letters, lowercase letters, numbers, and special symbols. Perfect for authentication, session IDs, and secret keys.
+    article: >
+      ## What is a Token and why is it important?
+      
+      In software development and cybersecurity, a **Token** is typically a random, hard-to-guess string of characters used for authentication, authorization, or session management.
+      
+      Generating high-quality random tokens is the first line of defense in securing your applications. Whether you are generating an API key for a new client, creating a temporary password reset token, or generating a secret salt, the token must have enough randomness (entropy) to withstand guessing or brute-force attacks.
+      
+      ## Why you shouldn't use standard random functions
+      
+      Standard random functions built into programming languages (like `Math.random()` in JavaScript or `rand()` in C) are **Pseudo-Random Number Generators (PRNGs)**. They are designed for speed and statistical randomness, not security. If an attacker figures out the internal state or seed of the PRNG, they can predict all future tokens.
+      
+      For any security-sensitive application, you must use a **Cryptographically Secure Pseudo-Random Number Generator (CSPRNG)**, such as the Web Crypto API's `crypto.getRandomValues()`. These generators use high-quality entropy sources from the operating system to guarantee unpredictability.
+      
+      ## Characteristics of a Strong Token
+      
+      1. **Sufficient Length**: The longer the token, the exponentially harder it is to crack. For security tokens, a length of at least 32-64 characters is recommended.
+      2. **Character Variety**: Mixing uppercase letters, lowercase letters, numbers, and special symbols vastly increases the number of possible combinations.
+      3. **Secure Generation**: Always generated using a CSPRNG.
+      
+      This tool uses your browser's native cryptographic API to generate tokens securely on your local device. We do not store or track any tokens you generate.
 
     uppercase: Uppercase (ABC...)
     lowercase: Lowercase (abc...)
@@ -380,6 +400,40 @@ tools:
   crontab-generator:
     title: Crontab generator
     description: Validate and generate crontab and get the human-readable description of the cron schedule.
+    article: >
+      ## What is Cron and Crontab?
+      
+      **Cron** is a time-based job scheduler in Unix-like operating systems (such as Linux and macOS). System administrators and developers use Cron to set up jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals.
+      
+      **Crontab** (short for Cron table) is the configuration file that specifies shell commands to run periodically on a given schedule.
+      
+      ## Crontab Expression Syntax
+      
+      A standard crontab expression consists of 5 fields separated by spaces:
+      
+      ```
+      * * * * * command to execute
+      - - - - -
+      │ │ │ │ │
+      │ │ │ │ +----- day of the week (0 - 7) (Sunday is 0 or 7)
+      │ │ │ +------- month (1 - 12)
+      │ │ +--------- day of the month (1 - 31)
+      │ +----------- hour (0 - 23)
+      +------------- minute (0 - 59)
+      ```
+      
+      ## Special Characters
+      
+      - `*` (Asterisk): Represents "every". For example, `*` in the minute field means "every minute".
+      - `,` (Comma): Used to separate items in a list. For example, `1,3,5` in the hours field means execution at 1 AM, 3 AM, and 5 AM.
+      - `-` (Hyphen): Defines a range. For example, `1-5` means all values from 1 through 5.
+      - `/` (Slash): Specifies step values. For example, `*/5` in the minute field means "every 5 minutes".
+      
+      ## Common Use Cases
+      
+      1. **Database Backups**: Automatically running a backup script every night at 3 AM.
+      2. **Log Cleaning**: Deleting old log files every Sunday to free up disk space.
+      3. **Sending Reports**: Generating and emailing monthly performance reports on the 1st of every month.
 
   http-status-codes:
     title: HTTP status codes
@@ -440,6 +494,26 @@ tools:
   base64-string-converter:
     title: Base64 String Encoder & Decoder Online - Text to Base64 Converter
     description: Encode and decode Base64 strings online. Convert text to Base64 and Base64 to text with JavaScript atob/btoa functions. RFC 4648 compliant encoding for web development, API integration, and data transmission. Free online Base64 encoding tool with UTF-8 support.
+    article: >
+      ## What is Base64 Encoding?
+      
+      **Base64** is a binary-to-text encoding scheme that represents binary data in an ASCII string format by translating it into a radix-64 representation. The Base64 alphabet consists of 64 printable characters: `A-Z`, `a-z`, `0-9`, `+`, and `/`.
+      
+      ## Why do we need Base64?
+      
+      Many legacy network routing protocols and systems (like older email systems) were originally designed to handle only standard ASCII text. If you try to send raw binary files (like images, compiled applications) or text with special control characters through these systems, the data might get corrupted, truncated, or misinterpreted.
+      
+      By converting binary data into a plain text Base64 string, you guarantee that the data remains intact during transit across any text-based medium.
+      
+      ## Common Use Cases
+      
+      1. **Data URIs (Inline Images)**: Web developers often convert small images or SVG files into Base64 strings and embed them directly into HTML or CSS (e.g., `<img src="data:image/png;base64,iVBORw0KG...">`). This saves HTTP requests and can speed up page loading.
+      2. **Basic Authentication**: In HTTP Basic Auth, the username and password are combined as `username:password` and then Base64 encoded before being sent in the HTTP header.
+      3. **JSON and XML**: Since JSON and XML are text-based formats, they cannot natively store binary data. Base64 is used to safely embed binary blobs (like cryptographic signatures or document attachments) within these formats.
+      
+      ## Security Warning
+      
+      **Base64 is NOT encryption.** It is merely an encoding format. Anyone with access to a Base64 string can instantly decode it back to its original form. Never use Base64 to "secure" passwords or sensitive data. For actual security, use proper encryption algorithms like AES.
 
   toml-to-yaml:
     title: TOML to YAML Converter Online - Convert TOML Config to YAML Format Free
@@ -480,6 +554,28 @@ tools:
   json-prettify:
     title: JSON prettify and format
     description: Prettify your JSON string into a friendly, human-readable format.
+    article: >
+      ## Understanding JSON Format
+      
+      **JSON** (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write, and easy for machines to parse and generate. Today, it is the standard format for transmitting data between a server and web applications (especially in RESTful APIs).
+      
+      ## Why format or beautify JSON?
+      
+      In production environments, APIs often return "minified" JSON to save bandwidth. This means all spaces, line breaks, and formatting are removed. For example:
+      `&#123;"user":&#123;"id":123,"name":"John Doe","isActive":true&#125;,"roles":["admin","user"]&#125;`
+      
+      While computers can easily parse this, it is practically unreadable for a developer trying to debug an issue or understand the data structure.
+      
+      A **JSON formatter** helps you by:
+      1. **Indenting and Formatting**: Converting minified JSON into a structured, tree-like format with proper indentation.
+      2. **Syntax Highlighting**: Using different colors for keys, strings, numbers, and booleans, making it much easier to visually scan the data.
+      3. **Error Detection**: If you are writing JSON manually and forget a comma or have mismatched brackets, the formatter will detect the invalid syntax and help you fix it.
+      
+      ## JSON Best Practices
+      
+      - All keys and string values must be enclosed in **double quotes (" ")**. Single quotes are not valid JSON.
+      - There should be **no trailing comma** after the last element in an object or array.
+      - JSON supports the following data types: Objects `&#123;&#125;`, Arrays `[]`, Strings `" "`, Numbers `123`, Booleans `true/false`, and `null`.
 
   docker-run-to-docker-compose-converter:
     title: Docker run to Docker compose converter
@@ -604,6 +700,20 @@ tools:
   uuid-generator:
     title: UUID Generator Online - v1, v4, v5 & GUID Generator Tool
     description: Generate universally unique identifiers (UUIDs) online. Create random UUID v4, time-based UUID v1, name-based UUID v3/v5, and nil UUIDs. Perfect for database primary keys, API request IDs, session identifiers, and distributed systems. RFC 4122 compliant 128-bit unique ID generator.
+    article: >
+      ## What is a UUID?
+      
+      A **UUID** (Universally Unique Identifier) is a 128-bit number used to uniquely identify information in computer systems. The main advantage of UUIDs is that they can be generated independently without a central authority, while still guaranteeing a negligible probability of duplication.
+      
+      ## UUID Versions Explained
+      
+      - **v1 (Time-based)**: Generated using the MAC address of the computer and the current timestamp. It is useful when you need to sort by creation time, but it may expose the MAC address of the generating machine.
+      - **v4 (Random)**: The most commonly used version. It relies on a cryptographically secure pseudo-random number generator (CSPRNG) to create a completely random ID. The chance of a collision is practically zero.
+      - **v3 & v5 (Name-based)**: Generated by hashing a namespace identifier and a name using MD5 (v3) or SHA-1 (v5). These versions are deterministic, meaning the same namespace and name will always produce the exact same UUID.
+      
+      ## Why use UUIDs?
+      
+      In modern distributed systems, microservices, and databases (like Cassandra or MongoDB), relying on auto-incrementing integers (like 1, 2, 3) for primary keys can lead to massive conflicts when merging data or sharding databases. UUIDs solve this problem by ensuring uniqueness across multiple independent nodes. Additionally, they prevent malicious users from guessing the number of records in your database (e.g., if a user sees `/user/5`, they know there are at least 5 users).
 
   ipv4-address-converter:
     title: IPv4 address converter

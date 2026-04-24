@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const domain = 'https://it-tools.eu.cc';
@@ -8,6 +8,7 @@ const lastmod = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
 const staticPages = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/about', priority: '0.8', changefreq: 'monthly' },
+    { path: '/blog', priority: '0.9', changefreq: 'weekly' },
 ];
 
 // Tool paths - extracted from tools index
@@ -100,6 +101,16 @@ const toolPaths = [
     '/iban-validator-and-parser',
 ];
 
+// Extract blog slugs
+const blogIndexPath = resolve(process.cwd(), 'src', 'blog', 'index.ts');
+const blogIndexContent = readFileSync(blogIndexPath, 'utf-8');
+const blogSlugs = [];
+const slugRegex = /slug:\s*['"]([^'"]+)['"]/g;
+let match;
+while ((match = slugRegex.exec(blogIndexContent)) !== null) {
+    blogSlugs.push(match[1]);
+}
+
 // Generate sitemap XML
 function generateSitemap() {
     let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -125,6 +136,16 @@ function generateSitemap() {
         xml += '  </url>\n';
     });
 
+    // Add blog pages
+    blogSlugs.forEach((slug) => {
+        xml += '  <url>\n';
+        xml += `    <loc>${domain}/blog/${slug}</loc>\n`;
+        xml += `    <lastmod>${lastmod}</lastmod>\n`;
+        xml += '    <changefreq>monthly</changefreq>\n';
+        xml += '    <priority>0.7</priority>\n';
+        xml += '  </url>\n';
+    });
+
     xml += '</urlset>';
 
     return xml;
@@ -137,4 +158,4 @@ const outputPath = resolve(process.cwd(), 'public', 'sitemap.xml');
 writeFileSync(outputPath, sitemapContent, 'utf-8');
 
 console.log(`✅ Sitemap generated successfully at: ${outputPath}`);
-console.log(`📝 Total URLs: ${staticPages.length + toolPaths.length}`);
+console.log(`📝 Total URLs: ${staticPages.length + toolPaths.length + blogSlugs.length}`);
